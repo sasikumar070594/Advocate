@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>[ADVOCATE NAME] | Advocate — Chennai</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101D32;--dark:#0A1425;--gold:#C5A46D;--gold2:#E8D5A0;--ivory:#F8F6F0;--white:#fff;--text:#343434;--radius:6px}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;color:var(--text);background:var(--ivory);line-height:1.7;overflow-x:hidden}
+h1,h2,h3{font-family:"Playfair Display",serif;color:var(--navy);line-height:1.2}
+a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.eyebrow{color:var(--gold);letter-spacing:.28em;text-transform:uppercase;font-size:12px;font-weight:700}
+.orn{display:flex;align-items:center;gap:12px;justify-content:center;margin:14px 0 8px}.orn:before,.orn:after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold))}.orn:after{background:linear-gradient(90deg,var(--gold),transparent)}.orn span{color:var(--gold)}
+.btn{display:inline-block;padding:13px 26px;border-radius:4px;font-weight:600;font-size:14px;cursor:pointer;border:1px solid var(--gold)}.btn-gold{background:linear-gradient(135deg,#D8BE8A,#C5A46D);color:#1a1405}.btn-gold:hover{filter:brightness(1.07)}.btn-line{border-color:var(--gold);color:var(--navy);background:transparent}.btn-line:hover{background:var(--navy);color:var(--gold2)}
+header{position:sticky;top:0;z-index:50;background:rgba(16,29,50,.97);border-bottom:2px solid var(--gold);color:#fff}.topbar{background:var(--dark);color:#D8BE8A;font-size:12px;padding:7px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}.logo{display:flex;gap:12px;align-items:center}.mark{width:48px;height:48px;border:2px double var(--gold);border-radius:50%;display:grid;place-items:center;font-family:"Playfair Display",serif;font-size:22px;color:var(--gold2);background:var(--dark)}.logo b{font-family:"Playfair Display",serif;font-size:20px;letter-spacing:.02em}.logo small{display:block;color:var(--gold);font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+nav.links{display:flex;gap:26px;font-size:14px}nav.links a{color:#EDE6D6}nav.links a:hover,nav.links a.active{color:var(--gold2)}#burger{display:none;background:none;border:1px solid var(--gold);color:var(--gold2);padding:8px 12px;border-radius:4px;font-size:18px;cursor:pointer}
+.hero{background:var(--navy);color:#fff;padding:56px 0 64px;position:relative;border-bottom:3px solid var(--gold)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}.hero h1{font-size:52px;color:#fff}.hero h1 em{font-style:italic;background:linear-gradient(135deg,#F0DFAC,#C5A46D);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.hero p.lead{color:#D9D2C0;margin:18px 0 26px;font-size:17px}.hero .meta{margin-top:18px;color:#D8BE8A;font-size:13px;letter-spacing:.08em}
+.portrait{border:3px double var(--gold);padding:12px;background:#0A1425}.portrait .in{border:1px solid rgba(197,164,109,.6);overflow:hidden}.portrait img{width:100%;height:520px;object-fit:cover;display:block}.portrait .cap{background:var(--dark);padding:14px;text-align:center}.portrait .cap b{font-family:"Playfair Display",serif;font-size:18px;color:var(--gold2)}.portrait .cap small{display:block;color:#D9D2C0}
+section{padding:68px 0}.sec-head{text-align:center;max-width:720px;margin:0 auto 38px}.sec-head h2{font-size:38px}.sec-head h2 span{color:var(--gold)}.sec-head p{color:#666;margin-top:10px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #E8DFC8;border-top:3px solid var(--gold);padding:28px;border-radius:6px;box-shadow:0 10px 30px rgba(16,29,50,.06)}.card:hover{border-color:var(--gold);transform:translateY(-3px);transition:.25s}.card .ic{width:54px;height:54px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:24px;margin-bottom:14px}.card h3{font-size:21px;margin-bottom:8px}.card p{font-size:14px;color:#555}.card .num{font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:28px}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}.about-img img{width:100%;height:480px;object-fit:cover;border:3px double var(--gold);padding:8px;background:#fff}.dropcap::first-letter{font-family:"Playfair Display",serif;font-size:56px;float:left;line-height:.85;padding:6px 10px 0 0;color:var(--gold)}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.kv div{background:#fff;border:1px solid #E8DFC8;padding:12px 14px}.kv b{font-size:12px;letter-spacing:.12em;color:var(--gold);text-transform:uppercase}.kv span{display:block;font-weight:600;color:var(--navy)}
+.darksec{background:var(--navy);color:#fff}.darksec h2{color:#fff}.darksec p{color:#D9D2C0}
+.faq{max-width:820px;margin:0 auto}.faq-item{background:#fff;border:1px solid #E8DFC8;margin-bottom:12px;border-radius:6px;overflow:hidden}.faq-q{width:100%;text-align:left;background:#fff;border:0;padding:18px 20px;font-family:"Playfair Display",serif;font-size:18px;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between}.faq-a{display:none;padding:0 20px 18px;color:#555;font-size:14px}.faq-item.open .faq-a{display:block}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #D9CFAF;border-radius:4px;font-family:Inter,sans-serif;font-size:14px;background:#fff}label{font-size:13px;font-weight:600;color:var(--navy);display:block;margin:12px 0 6px}form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}.contact-grid iframe{width:100%;height:320px;border:1px solid var(--gold)}
+footer{background:var(--dark);color:#D9D2C0;padding:56px 0 0;border-top:3px solid var(--gold)}footer h4{color:var(--gold2);font-family:"Playfair Display",serif;margin-bottom:14px}footer h4:after{content:"";display:block;width:36px;height:2px;background:var(--gold);margin-top:8px}.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:28px}.foot-grid a{display:block;padding:4px 0;font-size:14px}.copy{border-top:1px solid rgba(197,164,109,.3);margin-top:36px;padding:16px 0;text-align:center;font-size:12px}
+.pill{display:inline-block;background:#FFF8E6;border:1px solid var(--gold);color:#7A5F2A;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600}
+.searchbar{display:flex;gap:10px;max-width:720px;margin:0 auto 26px}.searchbar input{flex:1}
+.modal{position:fixed;inset:0;background:rgba(5,10,20,.7);display:none;align-items:center;justify-content:center;z-index:100;padding:16px}.modal.open{display:flex}.box{background:#fff;width:100%;max-width:520px;border-radius:8px;border-top:4px solid var(--gold);padding:28px;max-height:92vh;overflow:auto}.box h2{margin-bottom:6px}.hint{font-size:12px;color:#888;margin-top:10px}.admin-bar{background:#FFF3D6;border:1px solid var(--gold);padding:10px 14px;border-radius:6px;font-size:13px;margin-bottom:16px}
+.admin{display:none}.admin.open{display:block}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.tabs button{padding:10px 14px;border:1px solid var(--gold);background:#fff;border-radius:4px;cursor:pointer}.tabs button.active{background:var(--navy);color:var(--gold2)}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px solid #E8DFC8;padding:10px;text-align:left}th{background:#FFF8E6}
+@media(max-width:900px){.hero-grid,.about-grid,.contact-grid,.foot-grid{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.hero h1{font-size:38px}nav.links{display:none}nav.links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:18px}#burger{display:block}.portrait img,.about-img img{height:360px}form .row{grid-template-columns:1fr}}
+@media(max-width:560px){.grid3{grid-template-columns:1fr}}
+
+/* WhatsApp floating - real logo + animation, added only */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.35);border:2px solid #fff;cursor:pointer;animation:waPulse 2s infinite}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes waPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.top-float{position:fixed;left:18px;bottom:18px;z-index:90;width:46px;height:46px;border-radius:50%;background:#101D32;color:#E8D5A0;border:2px solid #C5A46D;display:none;place-items:center;cursor:pointer;font-size:20px}
+/* Full admin tabs - added only */
+.tabsFull{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.tabsFull button{padding:9px 12px;border:1px solid #C5A46D;background:#fff;border-radius:4px;cursor:pointer;font-size:13px}.tabsFull button.active{background:#101D32;color:#E8D5A0}
+.apFull{display:none}.apFull.active{display:block}.mini2{font-size:12px;color:#777}.thumb2{width:70px;height:70px;object-fit:cover;border:1px solid #E8DFC8;border-radius:4px}
+.adminGrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+
+/* SPLIT VIEW: website LEFT, admin RIGHT, live preview - added only */
+#adminModal{justify-content:flex-end !important; background:rgba(5,10,20,.18) !important; pointer-events:none !important; padding:0 !important; align-items:stretch !important;}
+#adminModal .box{pointer-events:auto !important; max-width:480px !important; width:480px !important; height:100vh !important; max-height:100vh !important; border-radius:0 !important; border-top:none !important; border-left:3px solid #C5A46D !important; overflow-y:auto !important; margin:0 !important; box-shadow:-10px 0 40px rgba(0,0,0,.25);}
+#adminModal .box h2{font-size:22px}
+@media(max-width:900px){#adminModal .box{width:100% !important; max-width:100% !important;}}
+.live-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#25D366;box-shadow:0 0 0 0 rgba(37,211,102,.6);animation:waPulse 1.6s infinite;vertical-align:middle}
+
+/* TRUE SPLIT: admin open -> website shrinks to LEFT, nothing hidden */
+body.admin-split{overflow-x:hidden}
+body.admin-split .topbar, body.admin-split header, body.admin-split section, body.admin-split footer{width:calc(100% - 480px) !important; max-width:calc(100% - 480px) !important}
+body.admin-split .topbar .wrap, body.admin-split header .wrap, body.admin-split section .wrap, body.admin-split footer .wrap{max-width:100% !important}
+body.admin-split .wa-float{right:498px !important}
+body.admin-split .top-float{left:12px}
+#adminModal.open, #adminModal{ background:transparent !important; }
+#adminModal .box{ border-left:3px solid #C5A46D !important; }
+@media(max-width:900px){ body.admin-split .topbar, body.admin-split header, body.admin-split section, body.admin-split footer{width:100% !important; max-width:100% !important} body.admin-split .wa-float{right:18px !important} #adminModal .box{width:100% !important} }
+
+/* Developer credit + admin focus highlight */
+.dev-credit{text-align:center;padding:10px 22px 14px;font-size:13px;color:#C5A46D;background:#0A1425;border-top:1px solid rgba(197,164,109,.35);letter-spacing:.02em}
+.dev-credit a{color:#E8D5A0;text-decoration:underline}
+.dev-credit b{color:#E8D5A0}
+.admin-focus{outline:3px solid #C5A46D !important; outline-offset:4px; box-shadow:0 0 0 6px rgba(197,164,109,.25) !important; transition:outline .3s}
+
+/* === PROPER SPLIT v2 - website LEFT 100%-480, admin RIGHT 480, NOTHING under admin === */
+body.admin-split #adminModal{position:fixed !important; inset:auto !important; top:0 !important; right:0 !important; bottom:0 !important; left:auto !important; width:480px !important; max-width:480px !important; height:100vh !important; max-height:100vh !important; display:none !important; padding:0 !important; margin:0 !important; background:#fff !important; pointer-events:auto !important; justify-content:flex-start !important; align-items:stretch !important; z-index:200 !important; box-shadow:-12px 0 40px rgba(0,0,0,.25) !important;}
+body.admin-split #adminModal.open{display:flex !important;}
+body.admin-split #adminModal .box{width:100% !important; max-width:100% !important; height:100vh !important; max-height:100vh !important; margin:0 !important; border-radius:0 !important; border:none !important; border-left:3px solid #C5A46D !important; overflow-y:auto !important; box-shadow:none !important;}
+body.admin-split .topbar, body.admin-split header, body.admin-split section, body.admin-split footer{width:calc(100% - 480px) !important; max-width:calc(100% - 480px) !important; margin-left:0 !important; margin-right:auto !important; box-sizing:border-box !important;}
+body.admin-split .topbar .wrap, body.admin-split header .wrap, body.admin-split section .wrap, body.admin-split footer .wrap{max-width:100% !important; margin-left:0 !important; margin-right:0 !important; padding-left:22px !important; padding-right:22px !important;}
+body.admin-split .wa-float{right:498px !important;}
+body.admin-split .top-float{left:12px !important;}
+@media(max-width:900px){ body.admin-split #adminModal{width:100% !important; max-width:100% !important;} body.admin-split .topbar, body.admin-split header, body.admin-split section, body.admin-split footer{width:100% !important; max-width:100% !important;} body.admin-split .wa-float{right:18px !important;} }
+
+/* FONT LOCK - Original font stays unless user explicitly saves a different font in Text & Fonts */
+body.font-original h1, body.font-original h2, body.font-original h3{font-family:"Playfair Display",serif !important}
+body.font-original{font-family:Inter,sans-serif !important}
+
+
+/* === THE JUSTICE GATE - cinematic intro, new module only === */
+#jgIntro{position:fixed;inset:0;z-index:99999;display:none;background:#050A14;color:#F8F6F0;overflow:hidden;perspective:1400px}
+#jgIntro.jg-show{display:block}
+#jgIntro.jg-closing{opacity:0;transition:opacity .8s ease}
+#jgStage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+#jgScalesWrap{position:relative;z-index:2;transform:scale(2.15);transition:transform 2.2s cubic-bezier(.22,.7,.2,1),opacity .8s ease;filter:drop-shadow(0 30px 60px rgba(0,0,0,.7))}
+#jgIntro.jg-pullback #jgScalesWrap{transform:scale(1)}
+#jgIntro.jg-settle #jgScalesWrap{transform:scale(.96);opacity:.9}
+#jgIntro.jg-energy #jgScalesWrap{transform:scale(.88);opacity:.55}
+#jgIntro.jg-doors #jgScalesWrap{opacity:0;transform:scale(.8);transition:opacity .6s ease}
+#jgScalesSvg{width:420px;max-width:88vw;height:auto}
+#jgBeam{transform-box:fill-box;transform-origin:center;animation:jgSwing var(--jg-swing-speed,3.2s) ease-in-out infinite}
+@keyframes jgSwing{0%,100%{transform:rotate(calc(var(--jg-swing-angle,4deg) * -1))}50%{transform:rotate(var(--jg-swing-angle,4deg))}}
+#jgIntro.jg-settle #jgBeam,#jgIntro.jg-energy #jgBeam,#jgIntro.jg-doors #jgBeam{animation:none;transform:rotate(0deg);transition:transform 1s ease}
+#jgEnergy{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity 1s ease;background:radial-gradient(circle at 50% 50%,rgba(255,230,160,.95) 0%,rgba(197,164,109,.65) 22%,rgba(197,164,109,.18) 48%,transparent 68%)}
+#jgIntro.jg-energy #jgEnergy,#jgIntro.jg-doors #jgEnergy{opacity:var(--jg-glow,0.9)}
+#jgRays{position:absolute;left:50%;top:50%;width:160vmax;height:160vmax;transform:translate(-50%,-50%);background:conic-gradient(from 0deg,transparent 0deg,rgba(255,225,150,.14) 6deg,transparent 12deg,rgba(255,225,150,.1) 18deg,transparent 24deg,rgba(255,225,150,.14) 30deg,transparent 36deg,rgba(255,225,150,.1) 42deg,transparent 48deg,rgba(255,225,150,.14) 54deg,transparent 60deg,rgba(255,225,150,.1) 66deg,transparent 72deg,rgba(255,225,150,.14) 78deg,transparent 84deg,rgba(255,225,150,.1) 90deg,transparent 96deg,rgba(255,225,150,.14) 102deg,transparent 108deg,rgba(255,225,150,.1) 114deg,transparent 120deg,rgba(255,225,150,.14) 126deg,transparent 132deg,rgba(255,225,150,.1) 138deg,transparent 144deg,rgba(255,225,150,.14) 150deg,transparent 156deg,rgba(255,225,150,.1) 162deg,transparent 168deg,rgba(255,225,150,.14) 174deg,transparent 180deg,rgba(255,225,150,.1) 186deg,transparent 192deg,rgba(255,225,150,.14) 198deg,transparent 204deg,rgba(255,225,150,.1) 210deg,transparent 216deg,rgba(255,225,150,.14) 222deg,transparent 228deg,rgba(255,225,150,.1) 234deg,transparent 240deg,rgba(255,225,150,.14) 246deg,transparent 252deg,rgba(255,225,150,.1) 258deg,transparent 264deg,rgba(255,225,150,.14) 270deg,transparent 276deg,rgba(255,225,150,.1) 282deg,transparent 288deg,rgba(255,225,150,.14) 294deg,transparent 300deg,rgba(255,225,150,.1) 306deg,transparent 312deg,rgba(255,225,150,.14) 318deg,transparent 324deg,rgba(255,225,150,.1) 330deg,transparent 336deg,rgba(255,225,150,.14) 342deg,transparent 348deg,rgba(255,225,150,.1) 354deg,transparent 360deg);animation:jgSpin 26s linear infinite;opacity:0;transition:opacity 1s ease}
+#jgIntro.jg-energy #jgRays,#jgIntro.jg-doors #jgRays{opacity:.85}
+@keyframes jgSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+#jgFlare{position:absolute;left:50%;top:50%;width:280px;height:280px;transform:translate(-50%,-50%);background:radial-gradient(circle,#fff 0%,rgba(255,240,190,.9) 18%,rgba(197,164,109,.4) 45%,transparent 70%);opacity:0;transition:opacity .8s ease;filter:blur(2px)}
+#jgIntro.jg-energy #jgFlare{opacity:var(--jg-flare,.8)}
+#jgParticles{position:absolute;inset:0;z-index:4;pointer-events:none}
+#jgParticles i{position:absolute;width:5px;height:5px;border-radius:50%;background:#E8D5A0;box-shadow:0 0 12px #C5A46D;opacity:0;animation:jgFloat 3.5s ease-in-out infinite}
+@keyframes jgFloat{0%{transform:translateY(14px) scale(.7);opacity:0}30%{opacity:.9}100%{transform:translateY(-26px) scale(1);opacity:0}}
+#jgDoors{position:absolute;inset:0;z-index:6;display:none;transform-style:preserve-3d}
+#jgIntro.jg-doors #jgDoors{display:flex}
+.jgDoor{position:relative;width:50%;height:100%;transform-style:preserve-3d;transition:transform var(--jg-door-speed,2s) cubic-bezier(.22,.6,.18,1);box-shadow:inset 0 0 0 3px rgba(197,164,109,.85),inset 0 0 80px rgba(0,0,0,.65);overflow:hidden}
+.jgDoorLeft{transform-origin:left center;background:linear-gradient(100deg,#1A1206 0%,#3A2A0E 18%,#6B4F1A 42%,#2A1E08 68%,#120C03 100%)}
+.jgDoorRight{transform-origin:right center;background:linear-gradient(260deg,#1A1206 0%,#3A2A0E 18%,#6B4F1A 42%,#2A1E08 68%,#120C03 100%)}
+#jgIntro.jg-open .jgDoorLeft{transform:perspective(1400px) rotateY(calc(var(--jg-door-angle,105deg) * -1))}
+#jgIntro.jg-open .jgDoorRight{transform:perspective(1400px) rotateY(var(--jg-door-angle,105deg))}
+.jgDoor:before{content:"";position:absolute;inset:7% 12%;border:2px solid rgba(232,213,160,.75);box-shadow:inset 0 0 0 1px rgba(197,164,109,.4),inset 0 0 40px rgba(0,0,0,.5);background:repeating-linear-gradient(180deg,rgba(232,213,160,.06) 0 18px,transparent 18px 36px),radial-gradient(circle at 50% 28%,rgba(255,235,170,.28),transparent 55%)}
+.jgDoor:after{content:"\2696";position:absolute;left:50%;top:32%;transform:translateX(-50%);font-size:64px;color:rgba(232,213,160,.9);text-shadow:0 0 22px rgba(197,164,109,.9)}
+.jgHandle{position:absolute;top:50%;width:14px;height:110px;border-radius:999px;background:linear-gradient(180deg,#F5E2A0,#8A6A24,#F5E2A0);box-shadow:0 0 18px rgba(197,164,109,.8)}
+.jgDoorLeft .jgHandle{right:18px}.jgDoorRight .jgHandle{left:18px}
+#jgSlit{position:absolute;left:50%;top:0;bottom:0;width:6px;transform:translateX(-50%);background:linear-gradient(180deg,transparent,#FFF3C4,#FFF3C4,transparent);box-shadow:0 0 30px 8px rgba(255,235,160,.9);z-index:7;transition:opacity .6s ease}
+#jgIntro.jg-open #jgSlit{opacity:0}
+#jgDoorLight{position:absolute;inset:0;z-index:5;background:radial-gradient(circle at 50% 50%,rgba(255,240,190,.95),rgba(197,164,109,.5) 45%,transparent 75%);opacity:0;transition:opacity 1.2s ease;pointer-events:none}
+#jgIntro.jg-open #jgDoorLight{opacity:var(--jg-door-light,.9)}
+#jgSkip{position:absolute;bottom:26px;right:28px;z-index:20;background:rgba(5,10,20,.55);border:1px solid rgba(197,164,109,.7);color:#EDE6D6;padding:8px 16px;border-radius:999px;cursor:pointer;font-size:13px;letter-spacing:.06em;backdrop-filter:blur(4px)}
+#jgSkip:hover{background:rgba(197,164,109,.2)}
+#jgBrand{position:absolute;bottom:26px;left:28px;z-index:20;font-family:"Playfair Display",serif;letter-spacing:.32em;font-size:11px;color:rgba(237,230,214,.75)}
+@media(max-width:640px){#jgScalesSvg{width:300px}#jgBrand{display:none}#jgSkip{right:16px;bottom:18px}}
+@media(prefers-reduced-motion:reduce){#jgBeam,#jgRays,#jgParticles i{animation:none!important}}
+</style></head>
+<body>
+<div id="jgIntro" aria-hidden="true"><div id="jgStage"><div id="jgScalesWrap"><svg id="jgScalesSvg" viewBox="0 0 420 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Golden Scales of Justice"><defs><linearGradient id="jgGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF3C4"/><stop offset=".35" stop-color="#C5A46D"/><stop offset=".6" stop-color="#8A6A24"/><stop offset="1" stop-color="#F5E2A0"/></linearGradient><linearGradient id="jgGoldDark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8D5A0"/><stop offset="1" stop-color="#5A4318"/></linearGradient><radialGradient id="jgGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFF3C4" stop-opacity=".9"/><stop offset="1" stop-color="#C5A46D" stop-opacity="0"/></radialGradient></defs><ellipse cx="210" cy="408" rx="150" ry="16" fill="url(#jgGlow)"/><rect x="198" y="28" width="24" height="360" rx="10" fill="url(#jgGold)"/><circle cx="210" cy="28" r="16" fill="url(#jgGold)"/><rect x="160" y="396" width="100" height="18" rx="8" fill="url(#jgGoldDark)"/><rect x="140" y="414" width="140" height="12" rx="6" fill="url(#jgGoldDark)"/><g id="jgBeam"><rect x="30" y="86" width="360" height="16" rx="8" fill="url(#jgGold)"/><circle cx="210" cy="94" r="12" fill="#FFF3C4"/><circle cx="48" cy="94" r="10" fill="url(#jgGold)"/><circle cx="372" cy="94" r="10" fill="url(#jgGold)"/><g stroke="#E8D5A0" stroke-width="2.5"><line x1="48" y1="94" x2="22" y2="230"/><line x1="48" y1="94" x2="48" y2="232"/><line x1="48" y1="94" x2="74" y2="230"/><line x1="372" y1="94" x2="346" y2="230"/><line x1="372" y1="94" x2="372" y2="232"/><line x1="372" y1="94" x2="398" y2="230"/></g><path d="M12 236 Q48 258 84 236 Q48 246 12 236 Z" fill="url(#jgGold)"/><path d="M336 236 Q372 258 408 236 Q372 246 336 236 Z" fill="url(#jgGold)"/></g></svg></div></div><div id="jgEnergy"></div><div id="jgRays"></div><div id="jgFlare"></div><div id="jgParticles"></div><div id="jgDoorLight"></div><div id="jgDoors"><div class="jgDoor jgDoorLeft"><span class="jgHandle"></span></div><div class="jgDoor jgDoorRight"><span class="jgHandle"></span></div></div><div id="jgSlit"></div><div id="jgBrand">JUSTICE &nbsp;•&nbsp; CHENNAI</div><button id="jgSkip" onclick="jgSkip()">Skip Intro →</button></div>
+
+<div class="topbar"><div class="wrap"><span>Advocate &nbsp;•&nbsp; Chennai, Tamil Nadu</span><span id="topContact">[CONTACT NUMBER] &nbsp;|&nbsp; [PROFESSIONAL EMAIL]</span></div></div>
+<header><div class="wrap nav"><a class="logo" href="#home"><span class="mark" id="logoMark">A</span><span><b id="siteName">[ADVOCATE NAME]</b><small>Advocate • Chennai</small></span></a><nav class="links" id="mainNav"><a href="#home" class="active">Home</a><a href="#about">About</a><a href="#practice">Practice Areas</a><a href="#profile">Profile</a><a href="#resources">Legal Resources</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav><button id="burger" onclick="document.getElementById('mainNav').classList.toggle('open')">☰</button></div></header>
+
+<section class="hero" id="home"><div class="wrap hero-grid"><div><div class="eyebrow">Advocate • Chennai, Tamil Nadu</div><h1>Committed to the<br><em>Principles of Justice</em></h1><div class="orn"><span>◆</span></div><p class="lead">Professional legal practice built on integrity, diligence and a commitment to the rule of law.</p><p><a class="btn btn-gold" href="#contact">Book a Consultation →</a> &nbsp; <a class="btn btn-line" style="color:#fff;border-color:#C5A46D" href="#practice">Explore Practice Areas</a></p><p class="meta">OFFICE — [OFFICE ADDRESS] &nbsp;•&nbsp; TIMINGS — [OFFICE TIMINGS]</p></div>
+<div class="portrait"><div class="in"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&q=80" alt="Advocate portrait placeholder" onerror="this.style.display='none'"></div><div class="cap"><b>[ADVOCATE NAME]</b><small>Advocate • [BAR COUNCIL ENROLMENT DETAILS]</small></div></div></div></section>
+
+<section id="about"><div class="wrap"><div class="sec-head"><div class="eyebrow">About the Advocate</div><h2>Professional <span>Biography</span></h2><div class="orn"><span>◆</span></div><p>Editable biography — replace placeholders with verified details only.</p></div>
+<div class="about-grid"><div class="about-img"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&q=80" alt="Law books" onerror="this.style.display='none'"></div>
+<div><p class="dropcap">[ADVOCATE NAME] is an Advocate practising in Chennai, Tamil Nadu. This biography, qualifications and practice details are fully editable from the admin panel. Do not publish unverified qualifications, victories or awards.</p>
+<div class="kv"><div><b>Education</b><span>[EDUCATIONAL QUALIFICATIONS]</span></div><div><b>Enrolment</b><span>[BAR COUNCIL ENROLMENT DETAILS]</span></div><div><b>Experience</b><span>[YEARS OF PRACTICE]</span></div><div><b>Languages</b><span>Tamil • English</span></div><div><b>Office</b><span>[OFFICE ADDRESS]</span></div><div><b>Practice</b><span>[ACTUAL PRACTICE AREAS]</span></div></div>
+<p style="margin-top:16px"><a class="btn btn-gold" href="#profile">View Full Profile</a></p></div></div></div></section>
+
+<section id="practice" style="background:#fff;border-top:1px solid #E8DFC8;border-bottom:1px solid #E8DFC8"><div class="wrap"><div class="sec-head"><div class="eyebrow">Practice Areas</div><h2>Areas of <span>Legal Practice</span></h2><div class="orn"><span>◆</span></div><p>Admin can add, edit, hide, reorder and delete categories.</p></div><div class="grid3" id="practiceGrid"></div></div></section>
+
+<section id="profile" class="darksec"><div class="wrap"><div class="sec-head"><div class="eyebrow">Professional Profile</div><h2 style="color:#fff">Experience &amp; <span style="color:var(--gold2)">Qualifications</span></h2><div class="orn"><span>◆</span></div></div>
+<div class="grid3"><div class="card"><h3>Education</h3><p>[EDUCATIONAL QUALIFICATIONS] — editable from admin.</p></div><div class="card"><h3>Enrolment &amp; Memberships</h3><p>[BAR COUNCIL ENROLMENT DETAILS] • Professional memberships, if applicable.</p></div><div class="card"><h3>Practice</h3><p>[YEARS OF PRACTICE] • Courts and practice areas as verified. No fabricated achievements.</p></div></div></div></section>
+
+<section><div class="wrap"><div class="sec-head"><div class="eyebrow">Professional Approach</div><h2>Why This <span>Approach</span></h2><div class="orn"><span>◆</span></div></div>
+<div class="grid3"><div class="card"><div class="ic">⚖</div><h3>Professional Integrity</h3><p>Factual, ethical practice — editable description.</p></div><div class="card"><div class="ic">📖</div><h3>Legal Research</h3><p>Diligent preparation and research — editable.</p></div><div class="card"><div class="ic">🔒</div><h3>Confidentiality</h3><p>Client information handled with care — editable.</p></div><div class="card"><div class="ic">✦</div><h3>Diligent Preparation</h3><p>Thorough preparation — editable.</p></div><div class="card"><div class="ic">💬</div><h3>Clear Communication</h3><p>Clear, plain explanation — editable.</p></div><div class="card"><div class="ic">◆</div><h3>Ethical Practice</h3><p>Practice within professional ethics — editable.</p></div></div></div></section>
+
+<section id="resources" style="background:#fff;border-top:1px solid #E8DFC8"><div class="wrap"><div class="sec-head"><div class="eyebrow">Legal Resources</div><h2>General Legal <span>Information</span></h2><div class="orn"><span>◆</span></div><p>General information only — not a substitute for advice on a specific matter.</p></div>
+<div class="searchbar"><input id="artSearch" placeholder="Search articles…" oninput="renderArticles()"><select id="artCat" onchange="renderArticles()"><option value="">All Categories</option><option>Civil</option><option>Criminal</option><option>Family</option><option>Property</option></select></div>
+<div class="grid3" id="articleGrid"></div></div></section>
+
+<section id="faq"><div class="wrap"><div class="sec-head"><div class="eyebrow">FAQ</div><h2>Frequently Asked <span>Questions</span></h2><div class="orn"><span>◆</span></div><p>General information only — not individualized legal advice.</p></div><div class="faq" id="faqList"></div></div></section>
+
+<section id="contact" class="darksec"><div class="wrap"><div class="sec-head"><div class="eyebrow">Contact</div><h2 style="color:#fff">Book a <span style="color:var(--gold2)">Consultation</span></h2><div class="orn"><span>◆</span></div><p>Do not submit confidential case documents or sensitive details through this form.</p></div>
+<div class="contact-grid"><div><p><b style="color:var(--gold2)">Office Address</b><br>[OFFICE ADDRESS]</p><p style="margin-top:14px"><b style="color:var(--gold2)">Phone</b><br>[CONTACT NUMBER]</p><p style="margin-top:14px"><b style="color:var(--gold2)">Email</b><br>[PROFESSIONAL EMAIL]</p><p style="margin-top:14px"><b style="color:var(--gold2)">Timings</b><br>[OFFICE TIMINGS]</p><iframe src="https://www.google.com/maps?q=Chennai,Tamil+Nadu&output=embed" loading="lazy" title="Map — Chennai"></iframe></div>
+<div style="background:#fff;padding:24px;border-radius:8px;color:#343434"><h3 style="margin-bottom:4px">Send an Enquiry</h3><p style="font-size:13px;color:#666">Demo storage only — connect backend before live use.</p>
+<form onsubmit="submitEnquiry(event)"><label>Name</label><input required id="fName" placeholder="Your name"><div class="row"><div><label>Email</label><input required type="email" id="fEmail"></div><div><label>Phone</label><input required id="fPhone"></div></div><label>Enquiry Category</label><select id="fCat"><option>Civil Law</option><option>Criminal Law</option><option>Family Law</option><option>Property Disputes</option><option>Other</option></select><label>Message</label><textarea required id="fMsg" rows="4" placeholder="Brief general enquiry — no confidential details"></textarea><label style="font-weight:400;font-size:13px"><input type="checkbox" required style="width:auto"> I understand this is general enquiry only and does not create an attorney-client relationship.</label><button class="btn btn-gold" style="width:100%;margin-top:12px">Submit Enquiry</button><p id="formMsg" style="margin-top:10px;color:green;font-size:13px"></p></form></div></div></div></section>
+
+<footer><div class="wrap foot-grid"><div><div class="logo"><span class="mark" id="footerLogoMark">A</span><span><b style="color:#fff">[ADVOCATE NAME]</b><small>Advocate • Chennai</small></span></div><p style="margin-top:12px;font-size:14px">Professional legal practice built on integrity, diligence and commitment to the rule of law.</p></div><div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#practice">Practice Areas</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><div><h4>Practice Areas</h4><span id="footPractice" style="font-size:14px"></span></div><div><h4>Office</h4><p style="font-size:14px">[OFFICE ADDRESS]<br>[CONTACT NUMBER]<br>[PROFESSIONAL EMAIL]<br>[OFFICE TIMINGS]</p></div></div><div class="copy">© <span id="year"></span> [ADVOCATE NAME] • Advocate, Chennai. All rights reserved. &nbsp;|&nbsp; <a href="#" onclick="openLegal('Disclaimer');return false">Disclaimer</a> • <a href="#" onclick="openLegal('Privacy Policy');return false">Privacy Policy</a> • <a href="#" onclick="openLegal('Terms');return false">Terms</a></div><div class="dev-credit" id="devCredit">Developed by <b>SK Digital Ads</b> • Puducherry</div></footer>
+
+<a class="wa-float" id="waBtn" href="https://wa.me/919999999999?text=Hello%2C%20I%20want%20to%20book%20a%20consultation" target="_blank" title="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.42 6.6 2 12.05 2c2.63 0 5.11 1.03 6.97 2.89a9.82 9.82 0 0 1 2.89 6.97c0 5.45-4.44 9.94-9.86 9.94M20.5 3.5A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.44-8.4Z"/></svg></a>
+<button class="top-float" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+<!-- ADMIN LOGIN : PASSWORD ONLY -->
+<div class="modal" id="loginModal"><div class="box"><h2>Admin Access</h2><p style="font-size:13px;color:#666">Password only. No username required.</p><div class="admin-bar">Demo password: <b>admin123</b> — production needs server-side auth, hashed passwords, protected APIs.</div><label>Password</label><div style="display:flex;gap:8px"><input type="password" id="adminPass" placeholder="Enter admin password"><button class="btn btn-line" onclick="togglePass()">👁</button></div><button class="btn btn-gold" style="width:100%;margin-top:16px" onclick="doLogin()">Login</button><p id="loginErr" style="color:red;font-size:13px;margin-top:10px"></p><p class="hint">Press Ctrl + Shift + A to open. No admin link is shown publicly.</p></div></div>
+
+<!-- ADMIN PANEL — FULL STATIC CMS -->
+<div class="modal" id="adminModal"><div class="box" style="max-width:980px"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h2>Admin Dashboard — Full CMS <span class='live-dot'></span> <span style='font-size:12px;color:#25D366'>LIVE</span></h2><p class='mini2' style='margin:4px 0 0'>Website LEFT side-la theriyum • Admin RIGHT side-la irukku • Edit pannina udane LEFT-la LIVE-a maarum.</p><div><button class="btn btn-gold" onclick="exportHTMLFile()">⬇ Export HTML</button> <button class="btn btn-line" onclick="closeAdmin()">✕ Close</button></div></div>
+<div class="admin-bar">Public design / colours / fonts / buttons — SAME as before. Below, EVERY section is editable: Header, Nav, Hero, About, Practice, Profile, Approach, Blog, FAQ, Contact, Maps, WhatsApp, Footer, Legal, SEO, Theme, Media, Backup.</div>
+<div class="tabsFull" id="tabsFull">
+<button class="active" onclick="showFullTab('f-dash',this)">Dashboard</button><button onclick="showFullTab('f-header',this)">Header & Nav</button><button onclick="showFullTab('f-hero',this)">Hero</button><button onclick="showFullTab('f-about',this)">About</button><button onclick="showFullTab('f-practice',this)">Practice Areas</button><button onclick="showFullTab('f-profile',this)">Profile</button><button onclick="showFullTab('f-approach',this)">Approach</button><button onclick="showFullTab('f-blog',this)">Blog</button><button onclick="showFullTab('f-faq',this)">FAQ</button><button onclick="showFullTab('f-contact',this)">Contact, Maps & WhatsApp</button><button onclick="showFullTab('f-footer',this)">Footer</button><button onclick="showFullTab('f-legal',this)">Disclaimer & Privacy</button><button onclick="showFullTab('f-seo',this)">SEO & Theme</button><button onclick="showFullTab('f-text',this)">Text & Fonts ✍️</button><button onclick="showFullTab('f-media',this)">Media Library</button><button onclick="showFullTab('f-enq',this)">Enquiries</button><button onclick="showFullTab('f-form',this)">Enquiry Form</button><button onclick="showFullTab('f-backup',this)">Backup / Export</button><button onclick="showFullTab('f-github',this)">🚀 GitHub Deploy</button><button onclick="showFullTab('f-intro',this)">🎬 Intro Animation</button><button onclick="showFullTab('f-intro',this)">🎬 Cinematic Intro</button><button onclick="doLogout()" style="background:#FFF0F0">Logout</button>
+</div>
+
+<div class="apFull active" id="panel-f-dash"><h3>Dashboard</h3><p id="dashStats2"></p><p class="mini2">All tabs below edit the live website. Changes save in this browser. Use Backup tab to Export HTML / JSON.</p><div class="adminGrid"><div><label>Advocate Name (quick)</label><input id="qName2"></div><div><label>Phone (quick)</label><input id="qPhone2"></div></div><button class="btn btn-gold" style="margin-top:12px" onclick="quickSave2()">Save Quick</button></div>
+
+<div class="apFull" id="panel-f-header"><h3>Header & Navigation</h3><label>Logo — Upload image</label><input type="file" accept="image/*" onchange="advFile(this,v=>{setLogo(v)})"><label>Logo — Link / URL (paste image link here)</label><input id="logoUrl2" placeholder="https://example.com/logo.png  OR  https://..."><div style="display:flex;gap:8px;margin-top:8px"><button class="btn btn-gold" onclick="applyLogoUrl2()">Apply Logo Link → Show Logo</button><button class="btn btn-line" onclick="document.getElementById('logoUrl2').value='';setLogo('')">Remove Logo</button></div><p class="mini2">Link kudutha udane LEFT website header-la logo maarum. Link work aagalana, image URL-a copy panni inga paste pannunga (right-click image → Copy image address).</p><div id="logoPreview2"></div>
+<h3 style="margin-top:16px">Logo — Show / Hide + Shape + Size</h3>
+<p class="mini2">Header-la maathina Footer-la-um same-a update aagum.</p>
+<label>Show Logo?</label><select id="logoShow2"><option value="true">Yes — Show Logo (ON)</option><option value="false">No — Hide Logo (OFF)</option></select>
+<label>Logo Shape</label><select id="logoShape2"><option value="circle">Circle — Original (Round)</option><option value="square">Square — Sharp Corners</option><option value="rounded">Rounded Square — Soft Corners</option><option value="rect">Rectangle — Wide (Logo Banner)</option><option value="oval">Oval</option></select>
+<div class="adminGrid"><div><label>Logo Width (px)</label><input type="number" id="logoW2" value="48" min="24" max="200"></div><div><label>Logo Height (px)</label><input type="number" id="logoH2" value="48" min="24" max="200"></div></div>
+<label>Corner Radius (px) — Square / Rounded-ku mattum</label><input type="range" id="logoRadius2" value="50" min="0" max="50" oninput="document.getElementById('logoRadiusVal2').textContent=this.value+'px'"><span id="logoRadiusVal2">50px</span>
+<label>Logo Border Colour</label><input type="color" id="logoBorder2" value="#C5A46D">
+<label>Logo Background (initial letter-ku)</label><input type="color" id="logoBg2" value="#0A1425">
+<button class="btn btn-gold" style="margin-top:12px" onclick="saveLogoStyle2()">Save Logo Style — Header + Footer</button> <button class="btn btn-line" onclick="resetLogoStyle2()">Reset to Original Logo</button>
+<p class="mini2">Example: Square venumna Shape → Square, Width 60, Height 60, Radius 0. Rectangle venumna Shape → Rectangle, Width 120, Height 48.</p>
+<button class="btn btn-line" onclick="setLogo('')">Remove Logo Image (show initial)</button><label>Advocate / Site Name</label><input id="hName2"><label>Tagline (under name)</label><input id="hTag2" value="Advocate • Chennai"><label>Top Bar Left Text</label><input id="hTop2" value="Advocate • Chennai, Tamil Nadu"><label>Navigation — Edit labels (comma separated, in order)</label><input id="hNav2" value="Home, About, Practice Areas, Profile, Legal Resources, FAQ, Contact"><p class="mini2">Nav order = order you type. Page sections stay same.</p><button class="btn btn-gold" style="margin-top:12px" onclick="saveHeader2()">Save Header & Nav</button></div>
+
+<div class="apFull" id="panel-f-hero"><h3>Hero Section</h3><label>Hero Title (line 1)</label><input id="heTitle1" value="Committed to the"><label>Hero Title — Gold Line (line 2)</label><input id="heTitle2" value="Principles of Justice"><label>Hero Subtitle</label><textarea id="heSub2" rows="3">Professional legal practice built on integrity, diligence and a commitment to the rule of law.</textarea><label>Button 1 Text</label><input id="heB1_2" value="Book a Consultation →"><label>Button 2 Text</label><input id="heB2_2" value="Explore Practice Areas"><label>Hero Portrait — Image URL</label><input id="heImg2" placeholder="https://..."><label>Hero Portrait — Upload</label><input type="file" accept="image/*" onchange="advFile(this,v=>{setHeroImg(v)})"><button class="btn btn-gold" style="margin-top:12px" onclick="saveHero2()">Save Hero</button></div>
+
+<div class="apFull" id="panel-f-about"><h3>About Advocate</h3><label>About Biography (first paragraph)</label><textarea id="abBio2" rows="4"></textarea><label>Education</label><input id="abEdu2"><label>Enrolment</label><input id="abEnroll2"><label>Experience</label><input id="abExp2"><label>Languages</label><input id="abLang2"><label>Practice Text</label><input id="abPrac2"><label>About Image — URL</label><input id="abImg2" placeholder="https://..."><label>About Image — Upload</label><input type="file" accept="image/*" onchange="advFile(this,v=>{setAboutImg(v)})"><button class="btn btn-gold" style="margin-top:12px" onclick="saveAbout2()">Save About</button></div>
+
+<div class="apFull" id="panel-f-practice"><h3>Practice Areas — Add / Edit / Delete / Reorder / Image</h3><div class="adminGrid"><div><label>Title</label><input id="prT2"></div><div><label>Icon (emoji / symbol)</label><input id="prI2" placeholder="⚖"></div></div><label>Description</label><input id="prD2"><label>Image URL (optional)</label><input id="prImg2" placeholder="https://..."><button class="btn btn-gold" style="margin-top:12px" onclick="addPractice2()">+ Add Practice Area</button><div id="prList2" style="margin-top:14px"></div></div>
+
+<div class="apFull" id="panel-f-profile"><h3>Profile — Advocate Photo, Name, Bar Council</h3>
+<label>Advocate Name (Hero + Profile + Footer)</label><input id="pfName2" placeholder="[ADVOCATE NAME]">
+<label>Bar Council Enrolment No. / Details</label><input id="pfBar2" placeholder="[BAR COUNCIL ENROLMENT DETAILS]">
+<label>Designation / Title</label><input id="pfDesig2" placeholder="Advocate • Chennai">
+<label>Advocate Photo — Upload</label><input type="file" accept="image/*" onchange="advFile(this,v=>{setProfilePhoto2(v)})">
+<label>Advocate Photo — Link / URL</label><input id="pfPhotoUrl2" placeholder="https://.../photo.jpg"><button class="btn btn-gold" style="margin-top:8px" onclick="applyProfilePhotoUrl2()">Apply Photo Link → Show Photo</button>
+<div id="pfPhotoPreview2" style="margin-top:10px"></div>
+<p class="mini2">Photo Hero portrait-la + Profile-la theriyum. Upload pannalum, Link kuduthalum work aagum.</p>
+<h3 style="margin-top:18px">Profile & Qualifications</h3><label>Education</label><input id="pfEdu2"><label>Enrolment / Memberships</label><input id="pfEnroll2"><label>Experience</label><input id="pfExp2"><label>Memberships (extra line)</label><input id="pfMemb2" placeholder="e.g. Bar Council member"><button class="btn btn-gold" style="margin-top:12px" onclick="saveProfile2()">Save Profile</button></div>
+
+<div class="apFull" id="panel-f-approach"><h3>Professional Approach — Add / Delete</h3><div class="adminGrid"><div><label>Title</label><input id="apT2"></div><div><label>Icon</label><input id="apI2" placeholder="⚖"></div></div><label>Description</label><input id="apD2"><button class="btn btn-gold" style="margin-top:12px" onclick="addApproach2()">+ Add Approach Card</button><div id="apList2" style="margin-top:14px"></div><p class="mini2">Note: Approach cards on page are in the dark/white section — new cards appear there.</p></div>
+
+<div class="apFull" id="panel-f-blog"><h3>Legal Resources / Blog — Add / Delete / Draft</h3><label>Article Title</label><input id="blT2"><div class="adminGrid"><div><label>Category</label><select id="blC2"><option>Civil</option><option>Criminal</option><option>Family</option><option>Property</option><option>Corporate</option></select></div><div><label>Status</label><select id="blS2"><option>Published</option><option>Draft</option></select></div></div><label>Excerpt / Content</label><textarea id="blE2" rows="3"></textarea><label>Cover Image URL</label><input id="blImg2" placeholder="https://..."><label>Cover — Upload</label><input type="file" accept="image/*" onchange="advFile(this,v=>{window._blImg2=v;alert('Cover ready — click Add Article')})"><button class="btn btn-gold" style="margin-top:12px" onclick="addArticle2()">+ Add Article</button><div id="blList2" style="margin-top:14px"></div></div>
+
+<div class="apFull" id="panel-f-faq"><h3>FAQ Manager — Add / Delete / Hide-Show / Reorder</h3><label>Question</label><input id="fqQ2"><label>Answer</label><textarea id="fqA2" rows="3"></textarea><label>Category</label><input id="fqC2" value="General"><button class="btn btn-gold" style="margin-top:12px" onclick="addFaq2()">+ Add FAQ</button><div id="fqList2" style="margin-top:14px"></div></div>
+
+<div class="apFull" id="panel-f-contact"><h3>Contact, Maps & WhatsApp</h3><label>Office Address</label><input id="ctAddr2"><label>Phone</label><input id="ctPhone2"><label>Email</label><input id="ctEmail2"><label>Timings</label><input id="ctTime2"><label>WhatsApp Number (with country code, e.g. 919999999999)</label><input id="ctWA2" value="919999999999"><label>WhatsApp Message (when visitor clicks)</label><input id="ctWAT2" value="Hello, I want to book a consultation"><label>Show Floating WhatsApp Button?</label><select id="ctWAS2"><option value="true">Yes — Show (animated, WhatsApp logo)</option><option value="false">No — Hide</option></select><label>Show Back-to-Top Arrow (left side)?</label><select id="ctTop2"><option value="true">Yes — Show</option><option value="false">No — Hide</option></select><label>Google Maps Embed URL</label><input id="ctMap2" placeholder="https://www.google.com/maps?q=...&output=embed">
+<label>Map Title</label><input id="ctMapTitle2" value="Map — Chennai">
+<label>Map Height (px)</label><input id="ctMapH2" value="260">
+<label>Show Map?</label><select id="ctMapShow2"><option value="true">Yes — Show Map</option><option value="false">No — Hide Map</option></select>
+<p class="mini2">Map URL paste panni Save pannina LEFT contact section-la map live-a maarum. Hide pannina map maraiyum.</p><button class="btn btn-gold" style="margin-top:12px" onclick="saveContact2()">Save Contact, Maps & WhatsApp</button></div>
+
+<div class="apFull" id="panel-f-footer"><h3>Footer Settings</h3><label>Footer Description (first column)</label><textarea id="ftD2" rows="3"></textarea><label>Footer Tagline</label><input id="ftT2" value="Advocate • Chennai">
+<label>Footer — Quick Links (comma separated)</label><input id="ftLinks2" value="Home, About, Practice Areas, FAQ, Contact">
+<label>Footer — Office Block (address / phone / email / timings - line by line)</label><textarea id="ftOffice2" rows="4">[OFFICE ADDRESS]
+[CONTACT NUMBER]
+[PROFESSIONAL EMAIL]
+[OFFICE TIMINGS]</textarea>
+<label>Footer — Copyright Line</label><input id="ftCopy2" value="[ADVOCATE NAME] • Advocate, Chennai. All rights reserved.">
+<h3 style="margin-top:18px">Developer Credit — Footer Bottom</h3>
+<p class="mini2">Footer-ku keezha theriyura “Developed by” line. Itha edit / hide pannalam.</p>
+<label>Developer Credit Text</label><input id="ftDevText2" value="Developed by SK Digital Ads • Puducherry">
+<label>Developer Link (click pannina pogum URL — optional)</label><input id="ftDevLink2" value="https://www.skdigitalads.in" placeholder="https://www.skdigitalads.in">
+<label>Show Developer Credit?</label><select id="ftDevShow2"><option value="true">Yes — Show</option><option value="false">No — Hide</option></select>
+<label>Developer Credit Colour</label><input type="color" id="ftDevColor2" value="#C5A46D">
+<label>Developer Credit Align</label><select id="ftDevAlign2"><option value="center">Center — Original</option><option value="left">Left</option><option value="right">Right</option></select>
+<button class="btn btn-gold" style="margin-top:12px" onclick="saveFooter2()">Save Footer + Developer Credit</button></div>
+
+<div class="apFull" id="panel-f-legal"><h3>Disclaimer & Privacy & Terms</h3><label>Disclaimer</label><textarea id="lgD2" rows="4"></textarea><label>Privacy Policy</label><textarea id="lgP2" rows="4"></textarea><label>Terms</label><textarea id="lgT2" rows="4"></textarea><button class="btn btn-gold" style="margin-top:12px" onclick="saveLegal2()">Save Legal</button></div>
+
+<div class="apFull" id="panel-f-seo"><h3>SEO & Theme</h3><label>SEO Title (browser tab)</label><input id="seoT2"><label>SEO Description</label><textarea id="seoD2" rows="3"></textarea><label>Gold Colour</label><input type="color" id="thGold2" value="#C5A46D"><label>Navy Colour</label><input type="color" id="thNavy2" value="#101D32"><p class="mini2">Default = original colours. Change only if you want. Reset button restores original.</p><button class="btn btn-gold" style="margin-top:12px" onclick="saveSEO2()">Save SEO & Theme</button> <button class="btn btn-line" onclick="resetTheme2()">Reset to Original Colours</button></div>
+
+<div class="apFull" id="panel-f-text"><h3>Text & Fonts — Font, Colour, Size, Alignment</h3><p style='background:#FFF8E6;border:1px solid #E8D5A0;padding:10px;border-radius:6px;font-size:13px'><b>Default = ORIGINAL font.</b> Playfair Display + Inter — pazhaya super design apdiye irukkum. Extra fonts keezha OPTIONAL-a irukku — neenga change pannina mattum thaan maarum.</p><p class="mini2">LEFT website-la live-a maarum. Font / Colour / Size / Align — ovvoru section-kkum thaniya set pannalam. Reset pannina pazhaya original design-kku thirumba pogum.</p>
+<h3 style="margin-top:14px">Global Text Style</h3>
+<div class="adminGrid"><div><label>Heading Font (h1 / h2 / h3)</label><select id="txHeadFont2"><option value="'Playfair Display',serif">Playfair Display — ORIGINAL (Default)</option><option value="'Cormorant Garamond',serif">Cormorant Garamond</option><option value="'Lora',serif">Lora</option><option value="'Merriweather',serif">Merriweather</option><option value="'Poppins',sans-serif">Poppins</option><option value="'Roboto',sans-serif">Roboto</option><option value="'Open Sans',sans-serif">Open Sans</option><option value="'Montserrat',sans-serif">Montserrat</option></select></div>
+<div><label>Body / Paragraph Font</label><select id="txBodyFont2"><option value="Inter,sans-serif">Inter — ORIGINAL (Default)</option><option value="'Open Sans',sans-serif">Open Sans</option><option value="'Roboto',sans-serif">Roboto</option><option value="'Poppins',sans-serif">Poppins</option><option value="'Lora',serif">Lora</option><option value="'Merriweather',serif">Merriweather</option><option value="'Playfair Display',serif">Playfair Display</option></select></div></div>
+<div class="adminGrid"><div><label>Heading Colour</label><input type="color" id="txHeadColor2" value="#101D32"></div><div><label>Body Text Colour</label><input type="color" id="txBodyColor2" value="#343434"></div></div>
+<div class="adminGrid"><div><label>Heading Size (px) — Hero + Section Headings</label><input type="number" id="txHeadSize2" value="32" min="18" max="72"></div><div><label>Body Text Size (px)</label><input type="number" id="txBodySize2" value="16" min="12" max="24"></div></div>
+<div class="adminGrid"><div><label>Line Height</label><select id="txLine2"><option value="1.5">1.5 — Compact</option><option value="1.7" selected>1.7 — Original</option><option value="1.9">1.9 — Spacious</option><option value="2.1">2.1 — Extra</option></select></div><div><label>Heading Bold?</label><select id="txBold2"><option value="600">600 — Semi Bold</option><option value="700" selected>700 — Bold</option><option value="400">400 — Normal</option><option value="800">800 — Extra Bold</option></select></div></div>
+<label>Button Text Font</label><select id="txBtnFont2"><option value="Inter,sans-serif">Inter — ORIGINAL (Default)</option><option value="'Poppins',sans-serif">Poppins</option><option value="'Playfair Display',serif">Playfair Display</option><option value="'Roboto',sans-serif">Roboto</option></select>
+
+<h3 style="margin-top:18px">Per-Section — Align + Font + Colour + Size</h3>
+<p class="mini2">Oru section-a mattum maatha venumna inga set pannunga. Example: Hero mattum Center, About mattum Justify.</p>
+<div style="border:1px solid #E8DFC8;padding:12px;border-radius:6px;margin-bottom:10px"><b>🏠 Hero Section</b><div class="adminGrid"><div><label>Align</label><select id="txHeroAlign2"><option value="left">Left — Original</option><option value="center">Center</option><option value="right">Right</option><option value="justify">Justify</option></select></div><div><label>Font</label><select id="txHeroFont2"><option value="">Same as Global</option><option value="'Playfair Display',serif">Playfair Display</option><option value="'Poppins',sans-serif">Poppins</option><option value="'Lora',serif">Lora</option><option value="Inter,sans-serif">Inter</option></select></div></div><div class="adminGrid"><div><label>Title Colour</label><input type="color" id="txHeroColor2" value="#FFFFFF"></div><div><label>Title Size (px)</label><input type="number" id="txHeroSize2" value="52" min="28" max="80"></div></div></div>
+
+<div style="border:1px solid #E8DFC8;padding:12px;border-radius:6px;margin-bottom:10px"><b>ℹ️ About Section</b><div class="adminGrid"><div><label>Align</label><select id="txAboutAlign2"><option value="left">Left — Original</option><option value="center">Center</option><option value="right">Right</option><option value="justify">Justify</option></select></div><div><label>Font</label><select id="txAboutFont2"><option value="">Same as Global</option><option value="'Lora',serif">Lora</option><option value="'Poppins',sans-serif">Poppins</option><option value="Inter,sans-serif">Inter</option><option value="'Playfair Display',serif">Playfair Display</option></select></div></div><div class="adminGrid"><div><label>Text Colour</label><input type="color" id="txAboutColor2" value="#343434"></div><div><label>Text Size (px)</label><input type="number" id="txAboutSize2" value="16" min="12" max="24"></div></div></div>
+
+<div style="border:1px solid #E8DFC8;padding:12px;border-radius:6px;margin-bottom:10px"><b>⚖️ Practice Areas</b><div class="adminGrid"><div><label>Align (Cards)</label><select id="txPracticeAlign2"><option value="left">Left — Original</option><option value="center">Center</option><option value="right">Right</option><option value="justify">Justify</option></select></div><div><label>Card Text Colour</label><input type="color" id="txPracticeColor2" value="#343434"></div></div></div>
+
+<div style="border:1px solid #E8DFC8;padding:12px;border-radius:6px;margin-bottom:10px"><b>👤 Profile Section</b><div class="adminGrid"><div><label>Align</label><select id="txProfileAlign2"><option value="center">Center — Original</option><option value="left">Left</option><option value="right">Right</option></select></div><div><label>Text Colour</label><input type="color" id="txProfileColor2" value="#FFFFFF"></div></div></div>
+
+<div style="border:1px solid #E8DFC8;padding:12px;border-radius:6px;margin-bottom:10px"><b>❓ FAQ Section</b><div class="adminGrid"><div><label>Align</label><select id="txFaqAlign2"><option value="left">Left — Original</option><option value="center">Center</option><option value="right">Right</option></select></div><div><label>Question Colour</label><input type="color" id="txFaqColor2" value="#101D32"></div></div></div>
+
+<div style="border:1px solid #E8DFC8;padding:12px;border-radius:6px;margin-bottom:10px"><b>📞 Contact + Footer</b><div class="adminGrid"><div><label>Contact Align</label><select id="txContactAlign2"><option value="left">Left — Original</option><option value="center">Center</option><option value="right">Right</option></select></div><div><label>Footer Text Colour</label><input type="color" id="txFooterColor2" value="#EDE6D6"></div></div></div>
+
+<button class="btn btn-gold" style="margin-top:12px" onclick="saveTextStyle2()">Save Text & Fonts</button> <button class="btn btn-line" onclick="resetTextStyle2()">Reset to Original Fonts</button>
+<p class="mini2" style="margin-top:8px">Tip: Font change pannina udane LEFT-la theriyum. Colour picker-la colour pick pannina udane live-a maarum.</p></div>
+
+<div class="apFull" id="panel-f-media"><h3>Media Library</h3><label>Upload Image</label><input type="file" accept="image/*" onchange="advFile(this,v=>{addMedia2(v)})"><div id="mediaGrid2" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"></div><p class="mini2">Use uploaded image: copy its URL by right-click → Copy image address, paste into Hero / About / Practice / Blog image URL fields. Or use the “Use” button to set it as Hero image.</p></div>
+
+<div class="apFull" id="panel-f-enq"><h3>Enquiries</h3><div id="enqBox2"></div></div>
+
+<div class="apFull" id="panel-f-form"><h3>Enquiry Form — Mandatory / Optional / Hidden</h3><p class="mini2">Visitor form-la edhu mandatory, edhu optional, edhu hide-nu inga set pannunga. Save pannina udane LEFT form-la live-a maarum.</p>
+<label>Name Field</label><select id="efName2"><option value="mandatory">Mandatory *</option><option value="optional">Optional</option><option value="hidden">Hidden — Hide</option></select>
+<label>Email Field</label><select id="efEmail2"><option value="mandatory">Mandatory *</option><option value="optional">Optional</option><option value="hidden">Hidden — Hide</option></select>
+<label>Phone Field</label><select id="efPhone2"><option value="mandatory">Mandatory *</option><option value="optional">Optional</option><option value="hidden">Hidden — Hide</option></select>
+<label>Enquiry Category Field</label><select id="efCat2"><option value="mandatory">Mandatory *</option><option value="optional">Optional</option><option value="hidden">Hidden — Hide</option></select>
+<label>Message Field</label><select id="efMsg2"><option value="mandatory">Mandatory *</option><option value="optional">Optional</option><option value="hidden">Hidden — Hide</option></select>
+<label>Consent Checkbox</label><select id="efConsent2"><option value="mandatory">Mandatory *</option><option value="optional">Optional</option><option value="hidden">Hidden — Hide</option></select>
+<label>Form Title</label><input id="efTitle2" value="Send an Enquiry"><label>Submit Button Text</label><input id="efBtn2" value="Submit Enquiry">
+<button class="btn btn-gold" style="margin-top:12px" onclick="saveFormRules2()">Save Enquiry Form Rules</button></div>
+
+<div class="apFull" id="panel-f-github"><h3>🚀 GitHub Deploy — Inga Irundhe Direct-a Live</h3>
+<p class="mini2">Inga change pannitu <b>Deploy Live</b> kudutha GitHub-la automatic-a update aagum. Token browser-la mattum save aagum — yaarukkum share pannatheenga.</p>
+<div style="background:#FFF8E6;border:1px solid #E8D5A0;padding:12px;border-radius:6px;margin-bottom:12px"><b>Step 1 — Token edhukkanum (1 min):</b><br>1. GitHub.com → Settings → Developer settings → <b>Personal access tokens → Fine-grained tokens</b> → Generate<br>2. Repository access: <b>Only select repositories → unga repo-a select pannunga</b><br>3. Permissions: <b>Contents → Read and write</b> + <b>Pages → Read and write</b><br>4. Token-a copy panni keezha paste pannunga. Token oru thadava thaan theriyum.</div>
+<label>GitHub Username / Owner</label><input id="ghUser2" placeholder="e.g. lakshana">
+<label>GitHub Personal Access Token (Fine-grained, Contents: Read & Write)</label><input type="password" id="ghToken2" placeholder="github_pat_...">
+<label>Repository Name</label><input id="ghRepo2" placeholder="e.g. advocate-website">
+<label>Branch</label><input id="ghBranch2" value="main">
+<label>File Path in Repo</label><input id="ghPath2" value="index.html">
+<label>Commit Message</label><input id="ghMsg2" value="Update advocate website from Admin Panel">
+<label>Custom Domain (optional — e.g. www.skdigitalads.in / irundha mattum)</label><input id="ghDomain2" placeholder="Leave empty if using github.io">
+<label>Auto Deploy?</label><select id="ghAuto2"><option value="false">OFF — Naan Deploy Live kudutha mattum pogum (Safe)</option><option value="true">ON — Admin-la Save pannina udane auto GitHub-kku pogum</option></select>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button class="btn btn-line" onclick="ghCheck2()">🔍 Check Connection</button><button class="btn btn-gold" onclick="ghDeploy2()">🚀 Deploy Live to GitHub</button><button class="btn btn-line" onclick="ghSaveSettings2()">Save GitHub Settings</button></div>
+<div id="ghStatus2" style="margin-top:14px;padding:12px;border:1px solid #E8DFC8;border-radius:6px;background:#F8F6F0;font-size:13px">Status: Not checked yet. Check Connection kudutha inga result varum.</div>
+<div id="ghLiveBox2" style="margin-top:12px"></div>
+<h3 style="margin-top:18px">Deploy History</h3><div id="ghLog2" style="font-size:13px"></div>
+<p class="mini2" style="margin-top:12px"><b>Note:</b> GitHub Pages ON pannanum: Repo → Settings → Pages → Source: Deploy from branch → Branch: main → / (root) → Save. First deploy-kku 1-2 min aagum. Token-a public repo-la / screenshot-la kaatathinga.</p>
+</div>
+
+
+
+<div class="apFull" id="panel-f-intro"><h3>Cinematic Intro Animation — THE JUSTICE GATE</h3><p class="mini2">Website / font / design-a thodathu. Intro module mattum. Draft = admin-la mattum, Publish = live.</p>
+<h4 style="margin-top:10px">1. Intro Animation</h4><div class="adminGrid"><div><label>Enable Intro</label><select id="jg_enabled"><option value="true">ON — Show Intro</option><option value="false">OFF — No Intro</option></select></div><div><label>Preset</label><select id="jg_preset"><option value="gate">The Justice Gate — Scales + Doors</option><option value="none">No Animation</option></select></div></div>
+<p style="margin-top:10px"><button class="btn btn-gold" onclick="jgPreview()">▶ Play Preview</button> <button class="btn btn-line" onclick="jgStop()">Stop</button></p>
+<h4 style="margin-top:12px">2. Justice Scales</h4><div class="adminGrid"><div><label>Scales Image URL (optional)</label><input id="jg_scalesImg" placeholder="https://..."></div><div><label>Scales Size (px)</label><input type="number" id="jg_scalesSize" value="420" min="220" max="700"></div></div>
+<div class="adminGrid"><div><label>Swing Angle (deg)</label><input type="number" id="jg_swing" value="4" min="0" max="12" step="0.5"></div><div><label>Swing Speed (sec)</label><input type="number" id="jg_swingSpeed" value="3.2" min="1" max="7" step="0.2"></div></div>
+<div class="adminGrid"><div><label>Swing Intensity</label><select id="jg_intensity"><option value="0.6">Soft</option><option value="1" selected>Normal</option><option value="1.5">Strong</option></select></div><div><label>Camera Zoom (start scale)</label><input type="number" id="jg_zoom" value="2.15" min="1.2" max="3" step="0.05"></div></div>
+<div class="adminGrid"><div><label>Camera Pullback Speed (sec)</label><input type="number" id="jg_pullback" value="2.2" min="0.8" max="4" step="0.2"></div><div><label>Metallic Gold Colour</label><input type="color" id="jg_gold" value="#C5A46D"></div></div>
+<label>Lighting Intensity</label><input type="range" id="jg_light" min="0.3" max="1.5" step="0.1" value="1">
+<h4 style="margin-top:12px">3. Energy Effects</h4><div class="adminGrid"><div><label>Energy Effects</label><select id="jg_energyOn"><option value="true">ON</option><option value="false">OFF</option></select></div><div><label>Golden Glow Intensity</label><input type="range" id="jg_glow" min="0" max="1" step="0.1" value="0.9"></div></div>
+<div class="adminGrid"><div><label>Particle Density</label><select id="jg_particles"><option value="8">Low — 8</option><option value="14" selected>Medium — 14</option><option value="26">High — 26</option></select></div><div><label>Light Beam / Rays</label><select id="jg_beam"><option value="true">ON</option><option value="false">OFF</option></select></div></div>
+<div class="adminGrid"><div><label>Lens Flare</label><input type="range" id="jg_flare" min="0" max="1" step="0.1" value="0.8"></div><div><label>Energy Duration (sec)</label><input type="number" id="jg_energyDur" value="1" min="0.4" max="2.5" step="0.1"></div></div>
+<h4 style="margin-top:12px">4. Door Customization</h4><div class="adminGrid"><div><label>Doors</label><select id="jg_doorOn"><option value="true">ON — Show Doors</option><option value="false">OFF — No Doors</option></select></div><div><label>Door Style</label><select id="jg_doorStyle"><option value="royal">Royal Gold + Bronze</option><option value="dark">Dark Bronze</option><option value="gold">Bright Gold</option></select></div></div>
+<div class="adminGrid"><div><label>Door Colour</label><input type="color" id="jg_doorColor" value="#6B4F1A"></div><div><label>Door Opening Speed (sec)</label><input type="number" id="jg_doorSpeed" value="2" min="0.8" max="4" step="0.2"></div></div>
+<div class="adminGrid"><div><label>Door Opening Angle (deg)</label><input type="number" id="jg_doorAngle" value="105" min="60" max="130"></div><div><label>Opening Direction</label><select id="jg_doorDir"><option value="out">Outward — Left + Right</option><option value="in">Inward</option></select></div></div>
+<div class="adminGrid"><div><label>Door Lighting</label><input type="range" id="jg_doorLight" min="0" max="1" step="0.1" value="0.9"></div><div><label>Background Light</label><input type="range" id="jg_bgLight" min="0" max="1" step="0.1" value="0.9"></div></div>
+<h4 style="margin-top:12px">5. Timing (sec)</h4><div class="adminGrid"><div><label>Scene 1 — Close-up</label><input type="number" id="jg_t1" value="1.5" min="0.5" max="3" step="0.1"></div><div><label>Scene 2 — Swing + Pullback</label><input type="number" id="jg_t2" value="2" min="0.5" max="4" step="0.1"></div></div>
+<div class="adminGrid"><div><label>Scene 3 — Energy</label><input type="number" id="jg_t3" value="1" min="0.4" max="2.5" step="0.1"></div><div><label>Scene 4 — Doors Open</label><input type="number" id="jg_t4" value="2" min="0.8" max="4" step="0.1"></div></div>
+<div class="adminGrid"><div><label>Scene 5 — Website Reveal</label><input type="number" id="jg_t5" value="1" min="0.4" max="2" step="0.1"></div><div><label>Total Duration</label><input id="jg_total" readonly value="7.5"></div></div>
+<h4 style="margin-top:12px">6. Website Reveal</h4><div class="adminGrid"><div><label>Reveal Transition</label><select id="jg_reveal"><option value="fade">Fade</option><option value="door">Doors Only</option></select></div><div><label>Reveal Speed (sec)</label><input type="number" id="jg_revealSpeed" value="0.8" min="0.3" max="2" step="0.1"></div></div>
+<h4 style="margin-top:12px">7. Visitor Settings</h4><div class="adminGrid"><div><label>Play Frequency</label><select id="jg_freq"><option value="every">Every Visit</option><option value="session">Once Per Session</option><option value="device">Once Per Device</option><option value="never">Disable Intro</option></select></div><div><label>Show Skip Button</label><select id="jg_skip"><option value="true">Yes — Show Skip</option><option value="false">No — Hide Skip</option></select></div></div>
+<div class="adminGrid"><div><label>Mobile Intro</label><select id="jg_m_enabled"><option value="true">ON — Simplified Mobile</option><option value="false">OFF — No Mobile Intro</option></select></div><div><label>Mobile Duration (sec)</label><input type="number" id="jg_m_dur" value="4.5" min="2" max="8" step="0.5"></div></div>
+<p style="margin-top:14px"><button class="btn btn-gold" onclick="jgSaveDraft()">Save Draft</button> <button class="btn btn-line" onclick="jgPublish()">Publish</button> <button class="btn btn-line" onclick="jgReset()">Reset to Default</button> <span id="jgMsg" style="font-size:13px;color:green"></span></p></div>
+
+<div class="apFull" id="panel-f-backup"><h3>Backup / Export / Import</h3><p class="mini2">Export HTML = full website file (same design). Export JSON = content data. Import JSON = restore content.</p><button class="btn btn-gold" onclick="exportHTMLFile()">⬇ Export HTML File</button> <button class="btn btn-line" onclick="exportJSONFile()">⬇ Export JSON</button><label style="margin-top:16px">Import JSON File</label><input type="file" accept=".json" onchange="importJSONFile(this)"><br><br><button class="btn btn-line" onclick="if(confirm('Reset all to defaults?')){localStorage.clear();location.reload()}">Reset Content</button></div>
+
+</div></div>
+
+<div class="modal" id="legalModal"><div class="box"><h2 id="legalTitle">Disclaimer</h2><p id="legalBody" style="font-size:14px;color:#444"></p><button class="btn btn-gold" style="margin-top:16px;width:100%" onclick="document.getElementById('legalModal').classList.remove('open')">Close</button></div></div>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+let practices=JSON.parse(localStorage.getItem('adv_practices')||'null')||[{t:'Civil Law',d:'Civil disputes, contracts, recovery and related matters.',i:'⚖'},{t:'Criminal Law',d:'Criminal defence and related proceedings.',i:'🛡'},{t:'Family Law',d:'Marriage, divorce, custody and family matters.',i:'♥'},{t:'Property Disputes',d:'Title, possession, partition and property disputes.',i:'🏛'},{t:'Corporate & Commercial Law',d:'Business, contracts and commercial matters.',i:'💼'},{t:'Consumer Disputes',d:'Consumer complaints and consumer fora matters.',i:'🛒'},{t:'Documentation & Drafting',d:'Agreements, deeds, notices and legal drafting.',i:'✍'},{t:'Constitutional & Administrative Law',d:'Writs and administrative matters.',i:'📜'},{t:'Labour & Employment Law',d:'Employment disputes and labour matters.',i:'👥'},{t:'Other Legal Services',d:'General legal services — contact for details.',i:'◆'}];
+let articles=JSON.parse(localStorage.getItem('adv_articles')||'null')||[{t:'What to Know Before Signing a Property Agreement',c:'Property',e:'General information on property agreements — not advice on a specific matter.',d:'2026-11-19'},{t:'Understanding Consumer Complaints — A General Guide',c:'Civil',e:'General overview of consumer dispute process.',d:'2026-11-10'},{t:'Family Matters: General Information on Process',c:'Family',e:'General information only, not individualized advice.',d:'2026-11-02'}];
+let faqs=JSON.parse(localStorage.getItem('adv_faqs')||'null')||[{q:'How do I book a consultation?',a:'Use the contact form or call the office number. Do not send confidential documents via the form.'},{q:'Does visiting this website create an attorney-client relationship?',a:'No. Visiting the website or submitting an enquiry does not create an attorney-client relationship.'},{q:'Are outcomes guaranteed?',a:'No legal outcome is guaranteed. Each matter depends on its own facts and applicable law.'},{q:'What should I bring to a consultation?',a:'Bring general identification and relevant non-confidential documents as advised by the office.'}];
+function saveAll(){localStorage.setItem('adv_practices',JSON.stringify(practices));localStorage.setItem('adv_articles',JSON.stringify(articles));localStorage.setItem('adv_faqs',JSON.stringify(faqs));}
+const roman=['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'];
+function renderPractices(){document.getElementById('practiceGrid').innerHTML=practices.map((p,i)=>`<div class="card"><div class="num">${roman[i]||i+1}</div><div class="ic">${p.i}</div><h3>${p.t}</h3><p>${p.d}</p></div>`).join('');document.getElementById('footPractice').innerHTML=practices.slice(0,6).map(p=>`<a href="#practice">${p.t}</a>`).join('');document.getElementById('practiceAdminList').innerHTML=practices.map((p,i)=>`<div style="display:flex;justify-content:space-between;border-bottom:1px solid #eee;padding:8px 0"><span>${p.t}</span><button onclick="delPractice(${i})" style="color:red;border:0;background:none;cursor:pointer">Delete</button></div>`).join('');}
+function renderArticles(){let q=(document.getElementById('artSearch').value||'').toLowerCase(),c=document.getElementById('artCat').value;let list=articles.filter(a=>(!q||a.t.toLowerCase().includes(q))&&(!c||a.c===c));document.getElementById('articleGrid').innerHTML=list.map(a=>`<div class="card"><span class="pill">${a.c}</span><p style="font-size:12px;color:#999;margin-top:10px">${a.d}</p><h3>${a.t}</h3><p>${a.e}</p><p style="margin-top:10px"><a href="#contact" style="color:#C5A46D;font-weight:600">Read / Enquire →</a></p></div>`).join('')||'<p>No articles found.</p>';}
+function renderFaqs(){document.getElementById('faqList').innerHTML=faqs.map((f,i)=>`<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">${f.q}<span>+</span></button><div class="faq-a">${f.a}</div></div>`).join('');}
+function submitEnquiry(e){e.preventDefault();let list=JSON.parse(localStorage.getItem('adv_enq')||'[]');list.push({n:document.getElementById('fName').value,e:document.getElementById('fEmail').value,p:document.getElementById('fPhone').value,c:document.getElementById('fCat').value,m:document.getElementById('fMsg').value,at:new Date().toLocaleString()});localStorage.setItem('adv_enq',JSON.stringify(list));document.getElementById('formMsg').textContent='Enquiry saved (demo). Office will contact you. Do not send confidential documents.';e.target.reset();}
+function openLegal(t){document.getElementById('legalTitle').textContent=t;let txt=t==='Disclaimer'?'Website information is general in nature. No attorney-client relationship is created merely by visiting this website or submitting an enquiry. No legal outcome is guaranteed. Obtain appropriate legal advice for your specific matter. Do not submit confidential information through unsecured forms.':t==='Privacy Policy'?'This policy describes how enquiries are handled. Do not submit confidential or sensitive case details via the form. Contact the office for secure handling. This text is editable — have it reviewed by the Advocate before publication.':'These terms are editable. Website content is general information only. Terms must be reviewed by the Advocate before publication.';document.getElementById('legalBody').textContent=txt;document.getElementById('legalModal').classList.add('open');}
+document.addEventListener('keydown',e=>{if(e.ctrlKey&&e.shiftKey&&e.key.toLowerCase()==='a'){e.preventDefault();document.getElementById('loginModal').classList.add('open');}});
+function togglePass(){let p=document.getElementById('adminPass');p.type=p.type==='password'?'text':'password';}
+function doLogin(){if(document.getElementById('adminPass').value==='admin123'){sessionStorage.setItem('adv_admin','1');document.getElementById('loginModal').classList.remove('open');document.getElementById('adminModal').classList.add('open');refreshAdmin();}else{document.getElementById('loginErr').textContent='Incorrect password. Demo: admin123';}}
+function closeAdmin(){document.getElementById('adminModal').classList.remove('open');}
+function doLogout(){sessionStorage.removeItem('adv_admin');closeAdmin();alert('Logged out. Press Ctrl+Shift+A to login again.');}
+function showTab(id,btn){document.querySelectorAll('[id^="tab-"]').forEach(d=>d.style.display='none');document.getElementById('tab-'+id).style.display='block';document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');if(id==='enq'){let list=JSON.parse(localStorage.getItem('adv_enq')||'[]');document.getElementById('enqList').innerHTML=list.length?list.map(x=>`<div style="border:1px solid #eee;padding:12px;margin-bottom:10px"><b>${x.n}</b> • ${x.p} • ${x.e}<br><span style="font-size:13px">${x.c} — ${x.m}</span><br><small>${x.at}</small></div>`).join(''):'<p>No enquiries yet.</p>';}}
+function refreshAdmin(){document.getElementById('stats').textContent=`Practice Areas: ${practices.length} • Articles: ${articles.length} • FAQs: ${faqs.length} • Enquiries: ${JSON.parse(localStorage.getItem('adv_enq')||'[]').length}`;renderPractices();}
+function saveSite(){let n=document.getElementById('editName').value;if(n)document.getElementById('siteName').textContent=n;let ph=document.getElementById('editPhone').value;if(ph)document.getElementById('topContact').textContent=ph+' | [PROFESSIONAL EMAIL]';localStorage.setItem('adv_site',JSON.stringify({name:n,phone:ph,addr:document.getElementById('editAddr').value}));document.getElementById('siteMsg').textContent='Saved.';}
+function addPractice(){let t=document.getElementById('newPractice').value.trim(),d=document.getElementById('newPracticeDesc').value.trim()||'Editable description.';if(!t)return alert('Enter title');practices.push({t,d,i:'◆'});saveAll();renderPractices();document.getElementById('newPractice').value='';document.getElementById('newPracticeDesc').value='';}
+function delPractice(i){if(!confirm('Delete this practice area?'))return;practices.splice(i,1);saveAll();renderPractices();}
+function addArticle(){let t=document.getElementById('newArtTitle').value.trim();if(!t)return alert('Enter title');articles.unshift({t,c:document.getElementById('newArtCat').value,e:document.getElementById('newArtExcerpt').value||'General information only.',d:new Date().toISOString().slice(0,10)});saveAll();renderArticles();document.getElementById('newArtTitle').value='';}
+function addFaq(){let q=document.getElementById('newFaqQ').value.trim(),a=document.getElementById('newFaqA').value.trim();if(!q||!a)return alert('Enter question and answer');faqs.push({q,a});saveAll();renderFaqs();}
+function exportJSON(){let data={practices,articles,faqs,site:localStorage.getItem('adv_site')};let b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='advocate-backup.json';a.click();}
+function resetSite(){if(!confirm('Reset all content to defaults?'))return;localStorage.removeItem('adv_practices');localStorage.removeItem('adv_articles');localStorage.removeItem('adv_faqs');location.reload();}
+renderPractices();renderArticles();renderFaqs();
+let saved=JSON.parse(localStorage.getItem('adv_site')||'null');if(saved&&saved.name)document.getElementById('siteName').textContent=saved.name;
+</script>
+<script>
+// ===== FULL ADMIN - static panels, works on login =====
+let ADV2 = JSON.parse(localStorage.getItem('adv_full2')||'null') || {wa:'919999999999',waText:'Hello, I want to book a consultation',waShow:true,topShow:true,logo:'',heroImg:'',aboutImg:'',map:'',footDesc:'Professional legal practice built on integrity, diligence and commitment to the rule of law.',disclaimer:'Website information is general in nature. No attorney-client relationship is created merely by visiting this website or submitting an enquiry. No legal outcome is guaranteed. Obtain appropriate legal advice for your specific matter. Do not submit confidential information through unsecured forms.',privacy:'This policy describes how enquiries are handled. Do not submit confidential or sensitive case details via the form. Contact the office for secure handling. Editable — have it reviewed by the Advocate before publication.',terms:'These terms are editable. Website content is general information only. Terms must be reviewed by the Advocate before publication.',seoTitle:document.title,seoDesc:'Professional legal practice in Chennai.',gold:'#C5A46D',navy:'#101D32',navLabels:'Home, About, Practice Areas, Profile, Legal Resources, FAQ, Contact',siteName:'',tagline:'Advocate • Chennai',topLeft:'Advocate • Chennai, Tamil Nadu',heroT1:'Committed to the',heroT2:'Principles of Justice',heroSub:'Professional legal practice built on integrity, diligence and a commitment to the rule of law.',heroB1:'Book a Consultation →',heroB2:'Explore Practice Areas',aboutBio:'',edu:'[EDUCATIONAL QUALIFICATIONS]',enroll:'[BAR COUNCIL ENROLMENT DETAILS]',exp:'[YEARS OF PRACTICE]',lang:'Tamil • English',pracTxt:'[ACTUAL PRACTICE AREAS]',addr:'[OFFICE ADDRESS]',phone:'[CONTACT NUMBER]',email:'[PROFESSIONAL EMAIL]',timings:'[OFFICE TIMINGS]',memb:''};
+let APPROACH2 = JSON.parse(localStorage.getItem('adv_approach2')||'null') || [{t:'Professional Integrity',d:'Factual, ethical practice.',i:'⚖'},{t:'Legal Research',d:'Diligent preparation and research.',i:'📖'},{t:'Confidentiality',d:'Client information handled with care.',i:'🔒'},{t:'Diligent Preparation',d:'Thorough preparation.',i:'✦'},{t:'Clear Communication',d:'Clear, plain explanation.',i:'💬'},{t:'Ethical Practice',d:'Practice within professional ethics.',i:'◆'}];
+function adv2Save(){localStorage.setItem('adv_full2',JSON.stringify(ADV2));localStorage.setItem('adv_approach2',JSON.stringify(APPROACH2));}
+function advFile(input,cb){let f=input.files[0];if(!f)return;let r=new FileReader();r.onload=e=>cb(e.target.result);r.readAsDataURL(f);}
+function showFullTab(id,btn){document.querySelectorAll('.apFull').forEach(d=>d.classList.remove('active'));let p=document.getElementById('panel-'+id);if(p)p.classList.add('active');document.querySelectorAll('#tabsFull button').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');fillAdmin2();}
+function fillAdmin2(){
+ let g=id=>document.getElementById(id); if(!g('hName2'))return;
+ g('hName2').value=ADV2.siteName||document.getElementById('siteName')?.textContent||''; g('hTag2').value=ADV2.tagline; g('hTop2').value=ADV2.topLeft; g('hNav2').value=ADV2.navLabels;
+ g('heTitle1').value=ADV2.heroT1; g('heTitle2').value=ADV2.heroT2; g('heSub2').value=ADV2.heroSub; g('heB1_2').value=ADV2.heroB1; g('heB2_2').value=ADV2.heroB2; g('heImg2').value=ADV2.heroImg;
+ g('abBio2').value=ADV2.aboutBio||''; g('abEdu2').value=ADV2.edu; g('abEnroll2').value=ADV2.enroll; g('abExp2').value=ADV2.exp; g('abLang2').value=ADV2.lang; g('abPrac2').value=ADV2.pracTxt; g('abImg2').value=ADV2.aboutImg;
+ g('pfEdu2').value=ADV2.edu; g('pfEnroll2').value=ADV2.enroll; g('pfExp2').value=ADV2.exp; g('pfMemb2').value=ADV2.memb;
+ g('ctAddr2').value=ADV2.addr; g('ctPhone2').value=ADV2.phone; g('ctEmail2').value=ADV2.email; g('ctTime2').value=ADV2.timings; g('ctWA2').value=ADV2.wa; g('ctWAT2').value=ADV2.waText; g('ctWAS2').value=String(ADV2.waShow); g('ctTop2').value=String(ADV2.topShow); g('ctMap2').value=ADV2.map;
+ g('ftD2').value=ADV2.footDesc; g('ftT2').value=ADV2.tagline; g('lgD2').value=ADV2.disclaimer; g('lgP2').value=ADV2.privacy; g('lgT2').value=ADV2.terms; g('seoT2').value=ADV2.seoTitle; g('seoD2').value=ADV2.seoDesc; g('thGold2').value=ADV2.gold; g('thNavy2').value=ADV2.navy;
+ g('qName2').value=ADV2.siteName||''; g('qPhone2').value=ADV2.phone;
+ let lp=document.getElementById('logoPreview2'); if(lp) lp.innerHTML=ADV2.logo?`<br><img class="thumb2" src="${ADV2.logo}">`:'<p class="mini2">No logo image — initial letter shown.</p>';
+ // lists
+ let pr=document.getElementById('prList2'); if(pr){let list=JSON.parse(localStorage.getItem('adv_practices')||'[]'); pr.innerHTML=list.map((p,i)=>`<div style="border:1px solid #eee;padding:10px;margin-bottom:8px;display:flex;gap:10px;align-items:center">${p.img?`<img class="thumb2" src="${p.img}">`:''}<div style="flex:1"><b>${p.t}</b><br><span class="mini2">${p.d||''}</span></div><button onclick="movePractice2(${i},-1)">↑</button><button onclick="movePractice2(${i},1)">↓</button><button onclick="delPractice2(${i})" style="color:red">Delete</button></div>`).join('')||'<p>No practice data — add below.</p>';}
+ let ap=document.getElementById('apList2'); if(ap) ap.innerHTML=APPROACH2.map((a,i)=>`<div style="border-bottom:1px solid #eee;padding:8px 0;display:flex;justify-content:space-between"><span>${a.i} ${a.t} — ${a.d}</span><button onclick="delApproach2(${i})" style="color:red">Delete</button></div>`).join('');
+ let bl=document.getElementById('blList2'); if(bl){let list=JSON.parse(localStorage.getItem('adv_articles')||'[]'); bl.innerHTML=list.map((a,i)=>`<div style="border-bottom:1px solid #eee;padding:8px 0;display:flex;justify-content:space-between"><span><b>${a.t}</b> — ${a.c||''}</span><button onclick="delArticle2(${i})" style="color:red">Delete</button></div>`).join('')||'<p>No articles.</p>';}
+ let fq=document.getElementById('fqList2'); if(fq){let list=JSON.parse(localStorage.getItem('adv_faqs')||'[]'); fq.innerHTML=list.map((f,i)=>`<div style="border-bottom:1px solid #eee;padding:8px 0;display:flex;justify-content:space-between"><span>${f.q} (${f.on===false?'Hidden':'Visible'})</span><span><button onclick="toggleFaq2(${i})">Hide/Show</button> <button onclick="delFaq2(${i})" style="color:red">Delete</button></span></div>`).join('')||'<p>No FAQs.</p>';}
+ let mg=document.getElementById('mediaGrid2'); if(mg){let m=JSON.parse(localStorage.getItem('adv_media2')||'[]'); mg.innerHTML=m.map((x,i)=>`<div style="border:1px solid #eee;padding:8px;text-align:center"><img class="thumb2" src="${x.src}" style="width:110px;height:90px"><br><button onclick="useMedia2(${i})">Use as Hero</button> <button onclick="delMedia2(${i})" style="color:red">Delete</button></div>`).join('')||'<p>No media yet.</p>';}
+ let eq=document.getElementById('enqBox2'); if(eq){let list=JSON.parse(localStorage.getItem('adv_enq')||'[]'); eq.innerHTML=list.length?list.map(x=>`<div style="border:1px solid #eee;padding:10px;margin-bottom:8px"><b>${x.n||''}</b> • ${x.p||''} • ${x.e||''}<br>${x.c||''} — ${x.m||''}<br><small>${x.at||''}</small></div>`).join(''):'<p>No enquiries yet.</p>';}
+ let ds=document.getElementById('dashStats2'); if(ds) ds.textContent=`Practice: ${JSON.parse(localStorage.getItem('adv_practices')||'[]').length} • Articles: ${JSON.parse(localStorage.getItem('adv_articles')||'[]').length} • FAQs: ${JSON.parse(localStorage.getItem('adv_faqs')||'[]').length} • Approach: ${APPROACH2.length} • Enquiries: ${JSON.parse(localStorage.getItem('adv_enq')||'[]').length} • Media: ${JSON.parse(localStorage.getItem('adv_media2')||'[]').length}`;
+}
+function applyAdv2(){
+ // Header / nav
+ let sn=document.getElementById('siteName'); if(sn && ADV2.siteName) sn.textContent=ADV2.siteName;
+ let nav=document.getElementById('mainNav'); if(nav && ADV2.navLabels){let labels=ADV2.navLabels.split(',').map(s=>s.trim()).filter(Boolean); let hrefs=['#home','#about','#practice','#profile','#resources','#faq','#contact']; nav.innerHTML=labels.map((l,i)=>`<a href="${hrefs[i]||'#home'}">${l}</a>`).join('');}
+ // Hero - find hero h1 / lead via section
+ let hero=document.querySelector('.hero'); if(hero){let h1=hero.querySelector('h1'); if(h1) h1.innerHTML=ADV2.heroT1+'<br><em>'+ADV2.heroT2+'</em>'; let lead=hero.querySelector('p.lead'); if(lead) lead.textContent=ADV2.heroSub; let btns=hero.querySelectorAll('.btn'); if(btns[0]) btns[0].textContent=ADV2.heroB1; if(btns[1]) btns[1].textContent=ADV2.heroB2; if(ADV2.heroImg){let img=hero.querySelector('img'); if(img){img.src=ADV2.heroImg; img.style.display='block';}}}
+ if(ADV2.aboutImg){let img=document.querySelector('.about-img img'); if(img){img.src=ADV2.aboutImg; img.style.display='block';}}
+ if(ADV2.logo){let m=document.getElementById('logoMark'); if(m) m.innerHTML='<img src="'+ADV2.logo+'" style="width:100%;height:100%;object-fit:cover;border-radius:50%">';}
+ // WhatsApp + top
+ let w=document.getElementById('waBtn'); if(w){w.href='https://wa.me/'+ADV2.wa+'?text='+encodeURIComponent(ADV2.waText); w.style.display=ADV2.waShow?'grid':'none';}
+ // Contact texts - topbar + footer + contact section (by text search, safe)
+ let tc=document.getElementById('topContact'); if(tc) tc.textContent=ADV2.phone+' | '+ADV2.email;
+ if(ADV2.map){let fr=document.querySelector('iframe'); if(fr) fr.src=ADV2.map;}
+ document.title=ADV2.seoTitle||document.title;
+ // Approach render - find approach grid (6 cards after profile) - replace cards in #approach section if exists, else append
+ renderApproach2();
+}
+function renderApproach2(){
+ // Find section containing "Why This" or approach - use all .grid3, approach is 3rd grid (index 2) in original layout
+ let grids=document.querySelectorAll('.grid3'); if(grids[2]){grids[2].innerHTML=APPROACH2.map(a=>`<div class="card"><div class="ic">${a.i}</div><h3>${a.t}</h3><p>${a.d}</p></div>`).join('');}
+}
+function setLogo(v){ADV2.logo=v; adv2Save(); applyAdv2(); fillAdmin2(); alert(v?'Logo updated':'Logo removed');}
+function setHeroImg(v){ADV2.heroImg=v; adv2Save(); applyAdv2(); alert('Hero portrait updated');}
+function setAboutImg(v){ADV2.aboutImg=v; adv2Save(); applyAdv2(); alert('About image updated');}
+function quickSave2(){ADV2.siteName=document.getElementById('qName2').value; ADV2.phone=document.getElementById('qPhone2').value; adv2Save(); applyAdv2(); fillAdmin2(); alert('Saved');}
+function saveHeader2(){ADV2.siteName=document.getElementById('hName2').value; ADV2.tagline=document.getElementById('hTag2').value; ADV2.topLeft=document.getElementById('hTop2').value; ADV2.navLabels=document.getElementById('hNav2').value; adv2Save(); applyAdv2(); fillAdmin2(); alert('Header & Nav saved');}
+function saveHero2(){ADV2.heroT1=document.getElementById('heTitle1').value; ADV2.heroT2=document.getElementById('heTitle2').value; ADV2.heroSub=document.getElementById('heSub2').value; ADV2.heroB1=document.getElementById('heB1_2').value; ADV2.heroB2=document.getElementById('heB2_2').value; let u=document.getElementById('heImg2').value; if(u) ADV2.heroImg=u; adv2Save(); applyAdv2(); alert('Hero saved');}
+function saveAbout2(){ADV2.aboutBio=document.getElementById('abBio2').value; ADV2.edu=document.getElementById('abEdu2').value; ADV2.enroll=document.getElementById('abEnroll2').value; ADV2.exp=document.getElementById('abExp2').value; ADV2.lang=document.getElementById('abLang2').value; ADV2.pracTxt=document.getElementById('abPrac2').value; let u=document.getElementById('abImg2').value; if(u) ADV2.aboutImg=u; adv2Save(); applyAdv2(); alert('About saved — bio/education also used in Profile');}
+function saveProfile2(){ADV2.edu=document.getElementById('pfEdu2').value; ADV2.enroll=document.getElementById('pfEnroll2').value; ADV2.exp=document.getElementById('pfExp2').value; ADV2.memb=document.getElementById('pfMemb2').value; adv2Save(); alert('Profile saved');}
+function saveFooter2(){ADV2.footDesc=document.getElementById('ftD2').value; ADV2.tagline=document.getElementById('ftT2').value; adv2Save(); let f=document.querySelector('footer p'); if(f) f.textContent=ADV2.footDesc; alert('Footer saved');}
+function saveLegal2(){ADV2.disclaimer=document.getElementById('lgD2').value; ADV2.privacy=document.getElementById('lgP2').value; ADV2.terms=document.getElementById('lgT2').value; adv2Save(); alert('Legal saved');}
+function saveSEO2(){ADV2.seoTitle=document.getElementById('seoT2').value; ADV2.seoDesc=document.getElementById('seoD2').value; ADV2.gold=document.getElementById('thGold2').value; ADV2.navy=document.getElementById('thNavy2').value; document.documentElement.style.setProperty('--gold',ADV2.gold); document.documentElement.style.setProperty('--navy',ADV2.navy); adv2Save(); applyAdv2(); alert('SEO & Theme saved');}
+function resetTheme2(){ADV2.gold='#C5A46D'; ADV2.navy='#101D32'; document.documentElement.style.setProperty('--gold','#C5A46D'); document.documentElement.style.setProperty('--navy','#101D32'); adv2Save(); fillAdmin2(); alert('Reset to original colours');}
+function saveContact2(){ADV2.addr=document.getElementById('ctAddr2').value; ADV2.phone=document.getElementById('ctPhone2').value; ADV2.email=document.getElementById('ctEmail2').value; ADV2.timings=document.getElementById('ctTime2').value; ADV2.wa=document.getElementById('ctWA2').value; ADV2.waText=document.getElementById('ctWAT2').value; ADV2.waShow=document.getElementById('ctWAS2').value==='true'; ADV2.topShow=document.getElementById('ctTop2').value==='true'; let mp=document.getElementById('ctMap2').value; if(mp) ADV2.map=mp; adv2Save(); applyAdv2(); alert('Contact, Maps & WhatsApp saved');}
+function addPractice2(){let t=document.getElementById('prT2').value.trim(); if(!t) return alert('Enter title'); let list=JSON.parse(localStorage.getItem('adv_practices')||'[]'); list.push({t,d:document.getElementById('prD2').value||'Editable description.',i:document.getElementById('prI2').value||'◆',img:document.getElementById('prImg2').value}); localStorage.setItem('adv_practices',JSON.stringify(list)); if(window.renderPractices) renderPractices(); fillAdmin2(); document.getElementById('prT2').value='';}
+function delPractice2(i){if(!confirm('Delete?'))return; let list=JSON.parse(localStorage.getItem('adv_practices')||'[]'); list.splice(i,1); localStorage.setItem('adv_practices',JSON.stringify(list)); if(window.renderPractices) renderPractices(); fillAdmin2();}
+function movePractice2(i,dir){let list=JSON.parse(localStorage.getItem('adv_practices')||'[]'); let j=i+dir; if(j<0||j>=list.length) return; [list[i],list[j]]=[list[j],list[i]]; localStorage.setItem('adv_practices',JSON.stringify(list)); if(window.renderPractices) renderPractices(); fillAdmin2();}
+function addApproach2(){let t=document.getElementById('apT2').value.trim(); if(!t) return alert('Enter title'); APPROACH2.push({t,d:document.getElementById('apD2').value||'Editable.',i:document.getElementById('apI2').value||'◆'}); adv2Save(); renderApproach2(); fillAdmin2();}
+function delApproach2(i){APPROACH2.splice(i,1); adv2Save(); renderApproach2(); fillAdmin2();}
+function addArticle2(){let t=document.getElementById('blT2').value.trim(); if(!t) return alert('Enter title'); let list=JSON.parse(localStorage.getItem('adv_articles')||'[]'); list.unshift({t,c:document.getElementById('blC2').value,e:document.getElementById('blE2').value||'General information only.',d:new Date().toISOString().slice(0,10),img:document.getElementById('blImg2').value||window._blImg2||'',status:document.getElementById('blS2').value}); localStorage.setItem('adv_articles',JSON.stringify(list)); if(window.renderArticles) renderArticles(); fillAdmin2();}
+function delArticle2(i){if(!confirm('Delete article?'))return; let list=JSON.parse(localStorage.getItem('adv_articles')||'[]'); list.splice(i,1); localStorage.setItem('adv_articles',JSON.stringify(list)); if(window.renderArticles) renderArticles(); fillAdmin2();}
+function addFaq2(){let q=document.getElementById('fqQ2').value.trim(),a=document.getElementById('fqA2').value.trim(); if(!q||!a) return alert('Enter Q & A'); let list=JSON.parse(localStorage.getItem('adv_faqs')||'[]'); list.push({q,a,cat:document.getElementById('fqC2').value||'General',on:true}); localStorage.setItem('adv_faqs',JSON.stringify(list)); if(window.renderFaqs) renderFaqs(); fillAdmin2();}
+function delFaq2(i){let list=JSON.parse(localStorage.getItem('adv_faqs')||'[]'); list.splice(i,1); localStorage.setItem('adv_faqs',JSON.stringify(list)); if(window.renderFaqs) renderFaqs(); fillAdmin2();}
+function toggleFaq2(i){let list=JSON.parse(localStorage.getItem('adv_faqs')||'[]'); list[i].on=list[i].on===false?true:false; localStorage.setItem('adv_faqs',JSON.stringify(list)); if(window.renderFaqs) renderFaqs(); fillAdmin2();}
+function addMedia2(v){let m=JSON.parse(localStorage.getItem('adv_media2')||'[]'); m.unshift({src:v,at:new Date().toLocaleString()}); localStorage.setItem('adv_media2',JSON.stringify(m)); fillAdmin2();}
+function delMedia2(i){let m=JSON.parse(localStorage.getItem('adv_media2')||'[]'); m.splice(i,1); localStorage.setItem('adv_media2',JSON.stringify(m)); fillAdmin2();}
+function useMedia2(i){let m=JSON.parse(localStorage.getItem('adv_media2')||'[]'); setHeroImg(m[i].src);}
+function exportHTMLFile(){let clone=document.documentElement.outerHTML; let b=new Blob(['<!DOCTYPE html>\n'+clone],{type:'text/html'}); let a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download='Advocate-Website-Standalone.html'; a.click(); alert('HTML file downloaded — Advocate-Website-Standalone.html');}
+function exportJSONFile(){let b=new Blob([JSON.stringify({adv_full2:ADV2,approach:APPROACH2,practices:localStorage.getItem('adv_practices'),articles:localStorage.getItem('adv_articles'),faqs:localStorage.getItem('adv_faqs')},null,2)],{type:'application/json'}); let a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download='advocate-content.json'; a.click();}
+function importJSONFile(input){let f=input.files[0]; if(!f) return; let r=new FileReader(); r.onload=e=>{try{let d=JSON.parse(e.target.result); if(d.adv_full2){ADV2=d.adv_full2; adv2Save();} if(d.approach){APPROACH2=d.approach; adv2Save();} if(d.practices) localStorage.setItem('adv_practices',d.practices); if(d.articles) localStorage.setItem('adv_articles',d.articles); if(d.faqs) localStorage.setItem('adv_faqs',d.faqs); applyAdv2(); fillAdmin2(); if(window.renderPractices) renderPractices(); if(window.renderArticles) renderArticles(); if(window.renderFaqs) renderFaqs(); alert('JSON imported successfully');}catch(err){alert('Invalid JSON file');}}; r.readAsText(f);}
+// Scroll for top arrow (respect topShow)
+window.addEventListener('scroll',()=>{let b=document.getElementById('topBtn'); if(!b) return; if(!ADV2.topShow){b.style.display='none';return;} b.style.display=window.scrollY>500?'grid':'none';});
+// Hook login: original doLogin opens adminModal, then fill admin
+let _origDoLogin = window.doLogin;
+if(_origDoLogin){ window.doLogin=function(){ _origDoLogin(); setTimeout(()=>{ try{fillAdmin2(); applyAdv2();}catch(e){} },80); }; }
+// Also fill on load
+applyAdv2();
+</script>
+
+<script>
+// === SPLIT VIEW + LIVE EDIT + ENTER LOGIN + LOGO LINK ===
+function applyLogoUrl2(){let u=document.getElementById('logoUrl2').value.trim(); if(!u) return alert('Logo link / URL paste pannunga'); setLogo(u); alert('Logo link applied — LEFT side header-la paarunga');}
+// Enter key on password -> login
+document.addEventListener('DOMContentLoaded',()=>{let p=document.getElementById('adminPass'); if(p){p.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); doLogin();}});}});
+// Also attach directly (in case DOMContentLoaded already fired)
+setTimeout(()=>{let p=document.getElementById('adminPass'); if(p && !p.dataset.enterBound){p.dataset.enterBound='1'; p.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); doLogin();}});}},500);
+// LIVE EDIT: typing in admin inputs updates LEFT website instantly (no Save click needed for main fields)
+document.addEventListener('input',e=>{
+ let id=e.target.id; if(!id) return;
+ let v=e.target.value;
+ try{
+  if(id==='hName2'){ADV2.siteName=v; applyAdv2();}
+  else if(id==='hTag2'){ADV2.tagline=v;}
+  else if(id==='heTitle1'){ADV2.heroT1=v; applyAdv2();}
+  else if(id==='heTitle2'){ADV2.heroT2=v; applyAdv2();}
+  else if(id==='heSub2'){ADV2.heroSub=v; applyAdv2();}
+  else if(id==='heB1_2'){ADV2.heroB1=v; applyAdv2();}
+  else if(id==='heB2_2'){ADV2.heroB2=v; applyAdv2();}
+  else if(id==='heImg2'){if(v){ADV2.heroImg=v; applyAdv2();}}
+  else if(id==='abImg2'){if(v){ADV2.aboutImg=v; applyAdv2();}}
+  else if(id==='ctWA2'){ADV2.wa=v; applyAdv2();}
+  else if(id==='ctWAT2'){ADV2.waText=v; applyAdv2();}
+  else if(id==='logoUrl2'){/* apply on button, but preview live if valid image */ if(v.startsWith('http')){ADV2.logo=v; applyAdv2();}}
+  else if(id==='seoT2'){ADV2.seoTitle=v; document.title=v;}
+  else if(id==='ftD2'){let f=document.querySelector('footer p'); if(f) f.textContent=v; ADV2.footDesc=v;}
+  // Save silently so refresh keeps it
+  if(typeof adv2Save==='function' && ['hName2','heTitle1','heTitle2','heSub2','heB1_2','heB2_2','heImg2','abImg2','ctWA2','ctWAT2','logoUrl2','seoT2','ftD2'].includes(id)){ adv2Save(); }
+ }catch(err){}
+});
+document.addEventListener('change',e=>{
+ let id=e.target.id; if(!id) return;
+ try{
+  if(id==='ctWAS2'){ADV2.waShow=e.target.value==='true'; adv2Save(); applyAdv2();}
+  if(id==='ctTop2'){ADV2.topShow=e.target.value==='true'; adv2Save(); applyAdv2();}
+  if(id==='thGold2'){ADV2.gold=e.target.value; document.documentElement.style.setProperty('--gold',ADV2.gold); adv2Save();}
+  if(id==='thNavy2'){ADV2.navy=e.target.value; document.documentElement.style.setProperty('--navy',ADV2.navy); adv2Save();}
+ }catch(err){}
+});
+// When admin opens, keep website scrollable on LEFT: modal is pointer-events none except box (CSS above), so LEFT stays clickable/scrollable.
+</script>
+
+<script>
+// === TRUE SPLIT + FORM RULES + PROFILE PHOTO + MAP + FOOTER ===
+function ensureAdv2Extra(){
+ if(!ADV2.formRules) ADV2.formRules={name:'mandatory',email:'mandatory',phone:'mandatory',cat:'mandatory',msg:'mandatory',consent:'mandatory',title:'Send an Enquiry',btn:'Submit Enquiry'};
+ if(!ADV2.profilePhoto) ADV2.profilePhoto='';
+ if(!ADV2.barCouncil) ADV2.barCouncil='[BAR COUNCIL ENROLMENT DETAILS]';
+ if(!ADV2.designation) ADV2.designation='Advocate • Chennai';
+ if(!ADV2.mapTitle) ADV2.mapTitle='Map — Chennai';
+ if(!ADV2.mapHeight) ADV2.mapHeight='260';
+ if(ADV2.mapShow===undefined) ADV2.mapShow=true;
+ if(!ADV2.footLinks) ADV2.footLinks='Home, About, Practice Areas, FAQ, Contact';
+ if(!ADV2.footOffice) ADV2.footOffice='[OFFICE ADDRESS]\n[CONTACT NUMBER]\n[PROFESSIONAL EMAIL]\n[OFFICE TIMINGS]';
+ if(!ADV2.copyText) ADV2.copyText='[ADVOCATE NAME] • Advocate, Chennai. All rights reserved.';
+}
+ensureAdv2Extra();
+function setProfilePhoto2(v){ADV2.profilePhoto=v; adv2Save(); applyProfilePhoto2(); fillAdmin2(); alert(v?'Advocate photo updated — LEFT Hero-la paarunga':'');}
+function applyProfilePhotoUrl2(){let u=document.getElementById('pfPhotoUrl2').value.trim(); if(!u) return alert('Photo link / URL paste pannunga'); setProfilePhoto2(u);}
+function applyProfilePhoto2(){
+ if(!ADV2.profilePhoto) return;
+ let heroImg=document.querySelector('.portrait img'); if(heroImg){heroImg.src=ADV2.profilePhoto; heroImg.style.display='block';}
+ let cap=document.querySelector('.portrait .cap b'); if(cap && ADV2.siteName) cap.textContent=ADV2.siteName;
+ let capSmall=document.querySelector('.portrait .cap small'); if(capSmall) capSmall.textContent='Advocate • '+(ADV2.barCouncil||'');
+ let pv=document.getElementById('pfPhotoPreview2'); if(pv) pv.innerHTML='<img class="thumb2" src="'+ADV2.profilePhoto+'" style="width:110px;height:110px;border-radius:50%">';
+}
+function applyFormRules2(){
+ ensureAdv2Extra(); let R=ADV2.formRules;
+ let setField=(fieldId,rule,labelText)=>{
+   let el=document.getElementById(fieldId); if(!el) return;
+   // find label: previous sibling label, or parent div label
+   let label=null; let p=el.previousElementSibling; if(p && p.tagName==='LABEL') label=p;
+   if(!label){ let parent=el.parentElement; if(parent) label=parent.querySelector('label'); }
+   let show = rule!=='hidden';
+   el.style.display=show?'':'none'; if(label) label.style.display=show?'':'none';
+   // parent wrapper for email/phone row divs
+   if(!show && el.parentElement && el.parentElement.tagName==='DIV' && el.parentElement.parentElement.classList.contains('row')){ /* keep row, hide cell */ el.parentElement.style.display='none'; } else if(show && el.parentElement && el.parentElement.tagName==='DIV'){ el.parentElement.style.display=''; }
+   el.required = (rule==='mandatory');
+   if(label){ let base=labelText||label.textContent.replace(' *','').trim(); label.textContent = show ? base + (rule==='mandatory'?' *':'') : label.textContent; }
+   if(el.tagName==='TEXTAREA'||el.tagName==='INPUT') el.placeholder = el.placeholder||'';
+ };
+ setField('fName',R.name,'Name'); setField('fEmail',R.email,'Email'); setField('fPhone',R.phone,'Phone'); setField('fCat',R.cat,'Enquiry Category'); setField('fMsg',R.msg,'Message');
+ // consent checkbox: label is parent of checkbox
+ let consentLabel=document.querySelector('form label input[type="checkbox"]'); if(consentLabel){ let lab=consentLabel.closest('label'); if(lab){ lab.style.display = R.consent==='hidden'?'none':''; consentLabel.required = (R.consent==='mandatory'); } }
+ // Title + button
+ let form=document.querySelector('form[onsubmit]'); if(form){ let h3=form.parentElement.querySelector('h3'); if(h3) h3.textContent=R.title; let btn=form.querySelector('button'); if(btn) btn.textContent=R.btn; }
+}
+function saveFormRules2(){ ensureAdv2Extra(); ADV2.formRules={name:document.getElementById('efName2').value,email:document.getElementById('efEmail2').value,phone:document.getElementById('efPhone2').value,cat:document.getElementById('efCat2').value,msg:document.getElementById('efMsg2').value,consent:document.getElementById('efConsent2').value,title:document.getElementById('efTitle2').value,btn:document.getElementById('efBtn2').value}; adv2Save(); applyFormRules2(); alert('Enquiry Form rules saved — LEFT form-la paarunga');}
+function applyMapFooter2(){
+ ensureAdv2Extra();
+ let fr=document.querySelector('#contact iframe'); if(fr){ fr.style.display=ADV2.mapShow?'block':'none'; fr.style.height=ADV2.mapHeight+'px'; fr.title=ADV2.mapTitle; if(ADV2.map) fr.src=ADV2.map; }
+ // Footer office block: 4th column in foot-grid
+ let footCols=document.querySelectorAll('footer .foot-grid > div'); if(footCols[3]){ let p=footCols[3].querySelector('p'); if(p) p.innerHTML=ADV2.footOffice.replace(/\n/g,'<br>'); }
+ if(footCols[1]){ let links=ADV2.footLinks.split(',').map(s=>s.trim()).filter(Boolean); let hrefs={'Home':'#home','About':'#about','Practice Areas':'#practice','FAQ':'#faq','Contact':'#contact','Profile':'#profile','Legal Resources':'#resources'}; footCols[1].innerHTML='<h4>Quick Links</h4>'+links.map(l=>`<a href="${hrefs[l]||'#home'}">${l}</a>`).join(''); }
+ let copy=document.querySelector('footer .copy'); if(copy){ /* keep Disclaimer links */ copy.innerHTML='© <span id="year">'+new Date().getFullYear()+'</span> '+ADV2.copyText+' &nbsp;|&nbsp; <a href="#" onclick="openLegal(\'Disclaimer\');return false">Disclaimer</a> • <a href="#" onclick="openLegal(\'Privacy Policy\');return false">Privacy Policy</a> • <a href="#" onclick="openLegal(\'Terms\');return false">Terms</a>'; }
+ // Footer desc
+ let f=document.querySelector('footer p'); if(f && ADV2.footDesc) f.textContent=ADV2.footDesc;
+}
+// Extend saveContact2 to include map/footer extras, and saveProfile2/saveFooter2 to include new fields - wrap originals
+let _origSaveContact2 = window.saveContact2;
+window.saveContact2 = function(){ if(_origSaveContact2) _origSaveContact2(); ensureAdv2Extra(); ADV2.mapTitle=document.getElementById('ctMapTitle2')?.value||ADV2.mapTitle; ADV2.mapHeight=document.getElementById('ctMapH2')?.value||ADV2.mapHeight; ADV2.mapShow=document.getElementById('ctMapShow2')?.value!=='false'; adv2Save(); applyMapFooter2(); };
+let _origSaveProfile2 = window.saveProfile2;
+window.saveProfile2 = function(){ ensureAdv2Extra(); let n=document.getElementById('pfName2'); if(n && n.value) ADV2.siteName=n.value; let b=document.getElementById('pfBar2'); if(b && b.value) ADV2.barCouncil=b.value; let d=document.getElementById('pfDesig2'); if(d && d.value) ADV2.designation=d.value; let u=document.getElementById('pfPhotoUrl2'); if(u && u.value) ADV2.profilePhoto=u.value; adv2Save(); applyProfilePhoto2(); applyAdv2(); if(_origSaveProfile2) _origSaveProfile2(); alert('Profile + Photo saved — LEFT Hero + Profile-la paarunga'); };
+let _origSaveFooter2 = window.saveFooter2;
+window.saveFooter2 = function(){ ensureAdv2Extra(); let l=document.getElementById('ftLinks2'); if(l) ADV2.footLinks=l.value; let o=document.getElementById('ftOffice2'); if(o) ADV2.footOffice=o.value; let c=document.getElementById('ftCopy2'); if(c) ADV2.copyText=c.value; adv2Save(); applyMapFooter2(); if(_origSaveFooter2) _origSaveFooter2(); };
+// Fill new fields when admin fills
+let _origFill2 = window.fillAdmin2;
+window.fillAdmin2 = function(){ if(_origFill2) _origFill2(); ensureAdv2Extra(); let s=id=>document.getElementById(id); if(s('efName2')) s('efName2').value=ADV2.formRules.name; if(s('efEmail2')) s('efEmail2').value=ADV2.formRules.email; if(s('efPhone2')) s('efPhone2').value=ADV2.formRules.phone; if(s('efCat2')) s('efCat2').value=ADV2.formRules.cat; if(s('efMsg2')) s('efMsg2').value=ADV2.formRules.msg; if(s('efConsent2')) s('efConsent2').value=ADV2.formRules.consent; if(s('efTitle2')) s('efTitle2').value=ADV2.formRules.title; if(s('efBtn2')) s('efBtn2').value=ADV2.formRules.btn; if(s('pfName2')) s('pfName2').value=ADV2.siteName||''; if(s('pfBar2')) s('pfBar2').value=ADV2.barCouncil; if(s('pfDesig2')) s('pfDesig2').value=ADV2.designation; if(s('pfPhotoUrl2')) s('pfPhotoUrl2').value=ADV2.profilePhoto; if(s('ctMapTitle2')) s('ctMapTitle2').value=ADV2.mapTitle; if(s('ctMapH2')) s('ctMapH2').value=ADV2.mapHeight; if(s('ctMapShow2')) s('ctMapShow2').value=String(ADV2.mapShow); if(s('ftLinks2')) s('ftLinks2').value=ADV2.footLinks; if(s('ftOffice2')) s('ftOffice2').value=ADV2.footOffice; if(s('ftCopy2')) s('ftCopy2').value=ADV2.copyText; applyProfilePhoto2(); applyFormRules2(); applyMapFooter2(); };
+// TRUE SPLIT hooks
+let _origDoLogin2 = window.doLogin;
+if(_origDoLogin2){ window.doLogin=function(){ _origDoLogin2(); setTimeout(()=>{ document.body.classList.add('admin-split'); },100); }; }
+let _origCloseAdmin = window.closeAdmin;
+if(_origCloseAdmin){ window.closeAdmin=function(){ _origCloseAdmin(); document.body.classList.remove('admin-split'); }; }
+let _origLogout = window.doLogout;
+if(_origLogout){ window.doLogout=function(){ _origLogout(); document.body.classList.remove('admin-split'); }; }
+// Apply on load
+applyProfilePhoto2(); applyFormRules2(); applyMapFooter2();
+</script>
+
+<script>
+// === TEXT & FONTS ===
+function ensureTextStyle2(){
+ // ORIGINAL = NO override. Extra fonts are OPTIONAL only.
+ // If user never saved Text & Fonts, _isOriginal stays true and applyTextStyle2 does NOTHING.
+ if(!ADV2.textStyle) ADV2.textStyle={_isOriginal:true,headFont:"'Playfair Display',serif",bodyFont:"Inter,sans-serif",headColor:"#101D32",bodyColor:"#343434",headSize:"",bodySize:"",line:"1.7",bold:"",btnFont:"",heroAlign:"left",heroFont:"",heroColor:"#FFFFFF",heroSize:"52",aboutAlign:"left",aboutFont:"",aboutColor:"#343434",aboutSize:"",practiceAlign:"left",practiceColor:"#343434",profileAlign:"center",profileColor:"#FFFFFF",faqAlign:"left",faqColor:"#101D32",contactAlign:"left",footerColor:"#EDE6D6"};
+ // Old auto-created style (without _isOriginal) was forcing 32px/16px - treat it as ORIGINAL and clear it
+ if(ADV2.textStyle._isOriginal===undefined){ ADV2.textStyle._isOriginal=true; ADV2.textStyle.headSize=""; ADV2.textStyle.bodySize=""; ADV2.textStyle.bold=""; ADV2.textStyle.btnFont=""; try{adv2Save();}catch(e){} }
+}
+ensureTextStyle2();
+function loadGoogleFonts2(){
+ let fonts=['Poppins:wght@400;600;700','Roboto:wght@400;500;700','Lora:ital,wght@0,400;0,600;1,400','Merriweather:wght@400;700','Montserrat:wght@400;600;700','Open+Sans:wght@400;600;700'];
+ fonts.forEach(f=>{ let id='gf-'+f.split(':')[0]; if(!document.getElementById(id)){ let l=document.createElement('link'); l.id=id; l.rel='stylesheet'; l.href='https://fonts.googleapis.com/css2?family='+f+'&display=swap'; document.head.appendChild(l); } });
+}
+function applyTextStyle2(){
+ ensureTextStyle2(); if(ADV2.textStyle._isOriginal) return; // ORIGINAL font - do NOT touch anything
+ loadGoogleFonts2(); let S=ADV2.textStyle;
+ document.body.style.fontFamily=S.bodyFont; document.body.style.color=S.bodyColor; document.body.style.fontSize=S.bodySize+'px'; document.body.style.lineHeight=S.line;
+ document.querySelectorAll('h1,h2,h3').forEach(h=>{ h.style.fontFamily=S.headFont; h.style.color = h.closest('.hero')? (S.heroColor||S.headColor) : S.headColor; h.style.fontWeight=S.bold; });
+ // Hero
+ let hero=document.querySelector('.hero'); if(hero){ hero.style.textAlign=S.heroAlign; let h1=hero.querySelector('h1'); if(h1){ if(S.heroFont) h1.style.fontFamily=S.heroFont; h1.style.color=S.heroColor; h1.style.fontSize=S.heroSize+'px'; } let lead=hero.querySelector('.lead'); if(lead){ lead.style.textAlign=S.heroAlign; } }
+ // About
+ let about=document.querySelector('#about'); if(about){ about.style.textAlign=S.aboutAlign; about.querySelectorAll('p').forEach(p=>{ if(S.aboutFont) p.style.fontFamily=S.aboutFont; p.style.color=S.aboutColor; p.style.fontSize=S.aboutSize+'px'; }); }
+ // Practice
+ let pr=document.querySelector('#practice'); if(pr){ pr.querySelectorAll('.card').forEach(c=>{ c.style.textAlign=S.practiceAlign; c.querySelectorAll('p').forEach(p=>p.style.color=S.practiceColor); }); }
+ // Profile
+ let pf=document.querySelector('#profile'); if(pf){ pf.style.textAlign=S.profileAlign; pf.querySelectorAll('p').forEach(p=>p.style.color=S.profileColor); }
+ // FAQ
+ let fq=document.querySelector('#faq'); if(fq){ fq.style.textAlign=S.faqAlign; fq.querySelectorAll('h3,button').forEach(b=>b.style.color=S.faqColor); }
+ // Contact
+ let ct=document.querySelector('#contact'); if(ct){ ct.style.textAlign=S.contactAlign; }
+ // Footer
+ let ft=document.querySelector('footer'); if(ft){ ft.querySelectorAll('p,span,a').forEach(e=>{ if(e.closest('.foot-grid')) e.style.color=S.footerColor; }); }
+ // Buttons font
+ document.querySelectorAll('.btn').forEach(b=>b.style.fontFamily=S.btnFont);
+}
+function saveTextStyle2(){
+ ensureTextStyle2(); ADV2.textStyle._isOriginal=false; let g=id=>document.getElementById(id).value; ADV2.textStyle={headFont:g('txHeadFont2'),bodyFont:g('txBodyFont2'),headColor:g('txHeadColor2'),bodyColor:g('txBodyColor2'),headSize:g('txHeadSize2'),bodySize:g('txBodySize2'),line:g('txLine2'),bold:g('txBold2'),btnFont:g('txBtnFont2'),heroAlign:g('txHeroAlign2'),heroFont:g('txHeroFont2'),heroColor:g('txHeroColor2'),heroSize:g('txHeroSize2'),aboutAlign:g('txAboutAlign2'),aboutFont:g('txAboutFont2'),aboutColor:g('txAboutColor2'),aboutSize:g('txAboutSize2'),practiceAlign:g('txPracticeAlign2'),practiceColor:g('txPracticeColor2'),profileAlign:g('txProfileAlign2'),profileColor:g('txProfileColor2'),faqAlign:g('txFaqAlign2'),faqColor:g('txFaqColor2'),contactAlign:g('txContactAlign2'),footerColor:g('txFooterColor2')};
+ adv2Save(); applyTextStyle2(); alert('Text & Fonts saved — LEFT-la paarunga');
+}
+function resetTextStyle2(){ ADV2.textStyle={_isOriginal:true}; adv2Save(); document.querySelectorAll('h1,h2,h3,p,body').forEach(e=>{e.style.removeProperty('font-family');e.style.removeProperty('color');e.style.removeProperty('font-size');e.style.removeProperty('line-height');e.style.removeProperty('font-weight');}); location.reload(); }
+function fillTextStyle2(){
+ ensureTextStyle2(); let S=ADV2.textStyle; let s=(id,v)=>{let e=document.getElementById(id); if(e) e.value=v;};
+ s('txHeadFont2',S.headFont); s('txBodyFont2',S.bodyFont); s('txHeadColor2',S.headColor); s('txBodyColor2',S.bodyColor); s('txHeadSize2',S.headSize); s('txBodySize2',S.bodySize); s('txLine2',S.line); s('txBold2',S.bold); s('txBtnFont2',S.btnFont);
+ s('txHeroAlign2',S.heroAlign); s('txHeroFont2',S.heroFont); s('txHeroColor2',S.heroColor); s('txHeroSize2',S.heroSize);
+ s('txAboutAlign2',S.aboutAlign); s('txAboutFont2',S.aboutFont); s('txAboutColor2',S.aboutColor); s('txAboutSize2',S.aboutSize);
+ s('txPracticeAlign2',S.practiceAlign); s('txPracticeColor2',S.practiceColor); s('txProfileAlign2',S.profileAlign); s('txProfileColor2',S.profileColor);
+ s('txFaqAlign2',S.faqAlign); s('txFaqColor2',S.faqColor); s('txContactAlign2',S.contactAlign); s('txFooterColor2',S.footerColor);
+}
+// Hook fill + live change
+let _origFillText = window.fillAdmin2;
+window.fillAdmin2 = function(){ if(_origFillText) _origFillText(); fillTextStyle2(); };
+// Live: any change in text panel applies instantly
+document.addEventListener('change',e=>{ if(e.target.id && e.target.id.startsWith('tx')){ try{ saveTextStyle2Silent(); }catch(err){} } });
+function saveTextStyle2Silent(){ ensureTextStyle2(); ADV2.textStyle._isOriginal=false; let g=id=>document.getElementById(id)?.value; if(!g('txHeadFont2')) return; ADV2.textStyle.headFont=g('txHeadFont2'); ADV2.textStyle.bodyFont=g('txBodyFont2'); ADV2.textStyle.headColor=g('txHeadColor2'); ADV2.textStyle.bodyColor=g('txBodyColor2'); ADV2.textStyle.headSize=g('txHeadSize2'); ADV2.textStyle.bodySize=g('txBodySize2'); ADV2.textStyle.line=g('txLine2'); ADV2.textStyle.bold=g('txBold2'); ADV2.textStyle.btnFont=g('txBtnFont2'); ADV2.textStyle.heroAlign=g('txHeroAlign2'); ADV2.textStyle.heroFont=g('txHeroFont2'); ADV2.textStyle.heroColor=g('txHeroColor2'); ADV2.textStyle.heroSize=g('txHeroSize2'); ADV2.textStyle.aboutAlign=g('txAboutAlign2'); ADV2.textStyle.aboutFont=g('txAboutFont2'); ADV2.textStyle.aboutColor=g('txAboutColor2'); ADV2.textStyle.aboutSize=g('txAboutSize2'); ADV2.textStyle.practiceAlign=g('txPracticeAlign2'); ADV2.textStyle.practiceColor=g('txPracticeColor2'); ADV2.textStyle.profileAlign=g('txProfileAlign2'); ADV2.textStyle.profileColor=g('txProfileColor2'); ADV2.textStyle.faqAlign=g('txFaqAlign2'); ADV2.textStyle.faqColor=g('txFaqColor2'); ADV2.textStyle.contactAlign=g('txContactAlign2'); ADV2.textStyle.footerColor=g('txFooterColor2'); adv2Save(); applyTextStyle2(); }
+applyTextStyle2();
+</script>
+
+<script>
+// === DEVELOPER CREDIT + SCROLL-SYNC ===
+function ensureDevCredit2(){
+ if(!ADV2.devText) ADV2.devText='Developed by SK Digital Ads • Puducherry';
+ if(!ADV2.devLink) ADV2.devLink='https://www.skdigitalads.in';
+ if(ADV2.devShow===undefined) ADV2.devShow=true;
+ if(!ADV2.devColor) ADV2.devColor='#C5A46D';
+ if(!ADV2.devAlign) ADV2.devAlign='center';
+}
+ensureDevCredit2();
+function applyDevCredit2(){
+ ensureDevCredit2(); let el=document.getElementById('devCredit'); if(!el) return;
+ el.style.display = ADV2.devShow?'block':'none'; el.style.color=ADV2.devColor; el.style.textAlign=ADV2.devAlign;
+ // Text: bold the brand part if present
+ let txt=ADV2.devText||'';
+ if(ADV2.devLink){ el.innerHTML = txt.replace('SK Digital Ads','<a href="'+ADV2.devLink+'" target="_blank"><b>SK Digital Ads</b></a>'); } else { el.innerHTML = txt.replace('SK Digital Ads','<b>SK Digital Ads</b>'); }
+}
+// Wrap saveFooter to include dev credit
+let _origSaveFooterDev = window.saveFooter2;
+window.saveFooter2 = function(){
+ ensureDevCredit2();
+ let d=document.getElementById('ftDevText2'); if(d) ADV2.devText=d.value;
+ let l=document.getElementById('ftDevLink2'); if(l) ADV2.devLink=l.value;
+ let s=document.getElementById('ftDevShow2'); if(s) ADV2.devShow=s.value==='true';
+ let c=document.getElementById('ftDevColor2'); if(c) ADV2.devColor=c.value;
+ let a=document.getElementById('ftDevAlign2'); if(a) ADV2.devAlign=a.value;
+ adv2Save(); applyDevCredit2();
+ if(_origSaveFooterDev) _origSaveFooterDev();
+ alert('Footer + Developer Credit saved — keezha footer-la paarunga');
+};
+// Fill dev fields
+let _origFillDev = window.fillAdmin2;
+window.fillAdmin2 = function(){ if(_origFillDev) _origFillDev(); ensureDevCredit2(); let s=id=>document.getElementById(id); if(s('ftDevText2')) s('ftDevText2').value=ADV2.devText; if(s('ftDevLink2')) s('ftDevLink2').value=ADV2.devLink; if(s('ftDevShow2')) s('ftDevShow2').value=String(ADV2.devShow); if(s('ftDevColor2')) s('ftDevColor2').value=ADV2.devColor; if(s('ftDevAlign2')) s('ftDevAlign2').value=ADV2.devAlign; applyDevCredit2(); };
+// === SCROLL-SYNC: Admin tab click -> Website auto-scrolls to that section ===
+let TAB_SCROLL_MAP = {
+ 'f-dash':'body','f-header':'header','f-hero':'#home','f-about':'#about','f-practice':'#practice','f-profile':'#profile','f-approach':'#profile','f-blog':'#resources','f-faq':'#faq','f-contact':'#contact','f-footer':'footer','f-legal':'footer','f-seo':'body','f-text':'body','f-media':'#home','f-enq':'#contact','f-form':'#contact','f-backup':'body','f-github':'body'
+};
+let _origShowFullTab = window.showFullTab;
+if(_origShowFullTab){
+ window.showFullTab = function(id,btn){
+   _origShowFullTab(id,btn);
+   // Scroll LEFT website to that section
+   setTimeout(()=>{
+     let sel = TAB_SCROLL_MAP[id]||'body';
+     let target = sel==='body' ? document.body : document.querySelector(sel);
+     if(!target) return;
+     // Remove old highlight
+     document.querySelectorAll('.admin-focus').forEach(e=>e.classList.remove('admin-focus'));
+     if(sel!=='body'){ target.classList.add('admin-focus'); setTimeout(()=>target.classList.remove('admin-focus'), 2200); }
+     // In split view, website is LEFT - scroll window so section comes into view (admin stays RIGHT fixed)
+     if(sel==='body'){ window.scrollTo({top:0,behavior:'smooth'}); }
+     else { target.scrollIntoView({behavior:'smooth',block:'start'}); }
+   },80);
+ };
+}
+applyDevCredit2();
+</script>
+
+<script>
+// === PROPER SPLIT v2 - enforce with JS ===
+function enforceSplit2(){
+ let isOpen = document.getElementById('adminModal') && document.getElementById('adminModal').classList.contains('open');
+ if(!isOpen) return;
+ document.body.classList.add('admin-split');
+ // Lock every website block to LEFT width
+ document.querySelectorAll('body > .topbar, body > header, body > section, body > footer').forEach(el=>{
+   el.style.setProperty('width','calc(100% - 480px)','important');
+   el.style.setProperty('max-width','calc(100% - 480px)','important');
+   el.style.setProperty('margin-left','0','important');
+   el.style.setProperty('margin-right','auto','important');
+ });
+ // Lock admin to RIGHT 480
+ let am=document.getElementById('adminModal');
+ if(am){
+   am.style.setProperty('position','fixed','important');
+   am.style.setProperty('top','0','important');
+   am.style.setProperty('right','0','important');
+   am.style.setProperty('bottom','0','important');
+   am.style.setProperty('left','auto','important');
+   am.style.setProperty('width','480px','important');
+   am.style.setProperty('height','100vh','important');
+   am.style.setProperty('background','#fff','important');
+   am.style.setProperty('pointer-events','auto','important');
+ }
+ let wa=document.getElementById('waBtn'); if(wa) wa.style.setProperty('right','498px','important');
+}
+function clearSplit2(){
+ document.body.classList.remove('admin-split');
+ document.querySelectorAll('body > .topbar, body > header, body > section, body > footer').forEach(el=>{ el.style.removeProperty('width'); el.style.removeProperty('max-width'); el.style.removeProperty('margin-left'); el.style.removeProperty('margin-right'); });
+ let am=document.getElementById('adminModal'); if(am){ ['position','top','right','bottom','left','width','height','background','pointer-events'].forEach(p=>am.style.removeProperty(p)); }
+ let wa=document.getElementById('waBtn'); if(wa) wa.style.removeProperty('right');
+}
+// Run enforce every 400ms while admin open + on resize
+setInterval(()=>{ if(document.getElementById('adminModal')?.classList.contains('open')) enforceSplit2(); },400);
+window.addEventListener('resize',()=>{ if(document.getElementById('adminModal')?.classList.contains('open')) enforceSplit2(); });
+// Hook open/close - use MutationObserver on adminModal class (most reliable, no wrapper chain issues)
+let _splitObs = new MutationObserver(()=>{ let open=document.getElementById('adminModal')?.classList.contains('open'); if(open) enforceSplit2(); else clearSplit2(); });
+let _adminEl=document.getElementById('adminModal'); if(_adminEl) _splitObs.observe(_adminEl,{attributes:true,attributeFilter:['class']});
+// Also hook close buttons directly
+document.addEventListener('click',e=>{ if(e.target && e.target.textContent && e.target.textContent.includes('Close') && e.target.closest('#adminModal')){ setTimeout(clearSplit2,50); } });
+</script>
+
+<script>
+// === GITHUB DEPLOY ===
+function ghGetSettings(){ return {user:document.getElementById('ghUser2')?.value.trim(), token:document.getElementById('ghToken2')?.value.trim(), repo:document.getElementById('ghRepo2')?.value.trim(), branch:document.getElementById('ghBranch2')?.value.trim()||'main', path:document.getElementById('ghPath2')?.value.trim()||'index.html', msg:document.getElementById('ghMsg2')?.value.trim()||'Update advocate website from Admin Panel', domain:document.getElementById('ghDomain2')?.value.trim(), auto:document.getElementById('ghAuto2')?.value==='true'}; }
+function ghSaveSettings2(){ let s=ghGetSettings(); localStorage.setItem('adv_github2', JSON.stringify({user:s.user,repo:s.repo,branch:s.branch,path:s.path,msg:s.msg,domain:s.domain,auto:s.auto})); if(s.token) sessionStorage.setItem('adv_github_token', s.token); document.getElementById('ghStatus2').innerHTML='✅ GitHub settings saved in this browser. Token session-la mattum (tab close pannina pogum).'; ghShowLive2(); alert('GitHub settings saved'); }
+function ghFill2(){ let d=JSON.parse(localStorage.getItem('adv_github2')||'{}'); let s=id=>document.getElementById(id); if(s('ghUser2')) s('ghUser2').value=d.user||''; if(s('ghRepo2')) s('ghRepo2').value=d.repo||''; if(s('ghBranch2')) s('ghBranch2').value=d.branch||'main'; if(s('ghPath2')) s('ghPath2').value=d.path||'index.html'; if(s('ghMsg2')) s('ghMsg2').value=d.msg||'Update advocate website from Admin Panel'; if(s('ghDomain2')) s('ghDomain2').value=d.domain||''; if(s('ghAuto2')) s('ghAuto2').value=String(!!d.auto); if(s('ghToken2')) s('ghToken2').value=sessionStorage.getItem('adv_github_token')||''; ghShowLive2(); ghShowLog2(); }
+function ghShowLive2(){ let d=JSON.parse(localStorage.getItem('adv_github2')||'{}'); let box=document.getElementById('ghLiveBox2'); if(!box) return; if(!d.user||!d.repo){ box.innerHTML=''; return; } let live = d.domain ? 'https://'+d.domain+'/' : 'https://'+d.user+'.github.io/'+d.repo+'/'; box.innerHTML='<div style="padding:12px;background:#101D32;color:#E8D5A0;border-radius:6px">🌐 <b>Live URL:</b> <a href="'+live+'" target="_blank" style="color:#fff;text-decoration:underline">'+live+'</a><br><span style="font-size:12px">Deploy pannina aprom inga click panni live site-a paarunga. GitHub Pages ON irukkanum.</span></div>'; }
+function ghShowLog2(){ let log=JSON.parse(localStorage.getItem('adv_github_log')||'[]'); let el=document.getElementById('ghLog2'); if(!el) return; el.innerHTML=log.length?log.slice(0,8).map(l=>'<div style="border-bottom:1px solid #eee;padding:8px 0">✅ '+l.at+' — '+l.msg+'<br><small>'+l.url+'</small></div>').join(''):'<p>No deploys yet.</p>'; }
+function ghLog2(msg,url){ let log=JSON.parse(localStorage.getItem('adv_github_log')||'[]'); log.unshift({at:new Date().toLocaleString(),msg,url:url||''}); localStorage.setItem('adv_github_log',JSON.stringify(log.slice(0,20))); ghShowLog2(); }
+async function ghCheck2(){
+ let s=ghGetSettings(); let st=document.getElementById('ghStatus2'); if(!s.user||!s.token||!s.repo){ st.innerHTML='⚠️ Username + Token + Repo — moonume fill pannunga.'; return; }
+ st.innerHTML='⏳ Checking connection...';
+ try{
+   let r=await fetch('https://api.github.com/user',{headers:{Authorization:'Bearer '+s.token, Accept:'application/vnd.github+json'}});
+   if(!r.ok) throw new Error('Token invalid / expired — Status '+r.status);
+   let u=await r.json();
+   let r2=await fetch('https://api.github.com/repos/'+encodeURIComponent(s.user)+'/'+encodeURIComponent(s.repo),{headers:{Authorization:'Bearer '+s.token, Accept:'application/vnd.github+json'}});
+   if(!r2.ok) throw new Error('Repo not found / no access — Status '+r2.status+' — Repo name + Token permission (Contents: Read & Write) check pannunga.');
+   let repo=await r2.json();
+   st.innerHTML='✅ <b>Connected!</b><br>GitHub User: <b>'+u.login+'</b><br>Repo: <b>'+repo.full_name+'</b> • Branch: '+s.branch+' • Private: '+(repo.private?'Yes':'No')+'<br>Pages: Repo → Settings → Pages-la Branch: '+s.branch+' / (root) select pannirukkanum.';
+   ghSaveSettings2();
+ }catch(e){ st.innerHTML='❌ <b>Connection Failed:</b> '+e.message+'<br>Check: Token correct-a? Fine-grained token-la Contents: Read & Write + Pages: Read & Write irukka? Repo name correct-a?'; }
+}
+function ghBuildHTML2(){ return '<!DOCTYPE html>\n'+document.documentElement.outerHTML; }
+async function ghDeploy2(){
+ let s=ghGetSettings(); let st=document.getElementById('ghStatus2'); if(!s.user||!s.token||!s.repo){ st.innerHTML='⚠️ First: Username + Token + Repo fill panni Save pannunga, aprom Deploy kudunga.'; return; }
+ if(!confirm('GitHub-kku Deploy pannalama?\nRepo: '+s.user+'/'+s.repo+'\nFile: '+s.path+'\nBranch: '+s.branch)) return;
+ st.innerHTML='⏳ Deploying... HTML-a GitHub-kku anuprom... (1-2 min aagalam)';
+ try{
+   // Get existing file SHA (if exists) - needed to update
+   let sha=null;
+   let getR=await fetch('https://api.github.com/repos/'+encodeURIComponent(s.user)+'/'+encodeURIComponent(s.repo)+'/contents/'+encodeURIComponent(s.path)+'?ref='+encodeURIComponent(s.branch),{headers:{Authorization:'Bearer '+s.token, Accept:'application/vnd.github+json'}});
+   if(getR.ok){ let jd=await getR.json(); sha=jd.sha; }
+   // UTF-8 safe base64
+   let html=ghBuildHTML2();
+   let b64=btoa(unescape(encodeURIComponent(html)));
+   let body={message:s.msg, content:b64, branch:s.branch}; if(sha) body.sha=sha;
+   let putR=await fetch('https://api.github.com/repos/'+encodeURIComponent(s.user)+'/'+encodeURIComponent(s.repo)+'/contents/'+encodeURIComponent(s.path),{method:'PUT',headers:{Authorization:'Bearer '+s.token, Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify(body)});
+   let putJ=await putR.json();
+   if(!putR.ok) throw new Error((putJ.message||'Deploy failed')+' — Status '+putR.status);
+   // CNAME for custom domain if given
+   if(s.domain){
+     try{ let cB64=btoa(s.domain); let cGet=await fetch('https://api.github.com/repos/'+encodeURIComponent(s.user)+'/'+encodeURIComponent(s.repo)+'/contents/CNAME?ref='+encodeURIComponent(s.branch),{headers:{Authorization:'Bearer '+s.token}}); let cSha=null; if(cGet.ok){ let cj=await cGet.json(); cSha=cj.sha; } let cBody={message:'Update CNAME',content:cB64,branch:s.branch}; if(cSha) cBody.sha=cSha; await fetch('https://api.github.com/repos/'+encodeURIComponent(s.user)+'/'+encodeURIComponent(s.repo)+'/contents/CNAME',{method:'PUT',headers:{Authorization:'Bearer '+s.token},body:JSON.stringify(cBody)}); }catch(e){}
+   }
+   ghSaveSettings2();
+   let live = s.domain ? 'https://'+s.domain+'/' : 'https://'+s.user+'.github.io/'+s.repo+'/';
+   st.innerHTML='✅ <b>Deployed Successfully!</b><br>Commit: '+putJ.commit.sha.slice(0,7)+'<br>Live URL: <a href="'+live+'" target="_blank">'+live+'</a><br>GitHub Pages update aaga 1-2 min aagalam. Aprom live link-a refresh panni paarunga.';
+   ghLog2('Deployed to '+s.user+'/'+s.repo+' @ '+s.branch, live);
+   alert('✅ Deployed to GitHub! Live URL: '+live);
+ }catch(e){ st.innerHTML='❌ <b>Deploy Failed:</b> '+e.message; }
+}
+// Auto Deploy: if ON, any admin Save triggers deploy (debounced)
+let _ghAutoTimer=null;
+function ghMaybeAutoDeploy2(){
+ let d=JSON.parse(localStorage.getItem('adv_github2')||'{}'); if(!d.auto) return; let token=sessionStorage.getItem('adv_github_token'); if(!token||!d.user||!d.repo) return;
+ clearTimeout(_ghAutoTimer); _ghAutoTimer=setTimeout(()=>{ document.getElementById('ghToken2').value=token; ghDeploy2(); }, 2500);
+}
+// Fill on admin open + on load
+let _origFillGh = window.fillAdmin2;
+window.fillAdmin2 = function(){ if(_origFillGh) _origFillGh(); try{ghFill2();}catch(e){} };
+ghFill2();
+</script>
+
+<script>
+// === LOGO SHOW/HIDE + SHAPE + SIZE + HEADER-FOOTER SYNC ===
+function ensureLogoStyle2(){
+ if(!ADV2.logoStyle) ADV2.logoStyle={show:true, shape:'circle', w:'48', h:'48', radius:'50', border:'#C5A46D', bg:'#0A1425'};
+}
+ensureLogoStyle2();
+function applyLogoStyle2(){
+ ensureLogoStyle2(); let S=ADV2.logoStyle;
+ let radius = S.shape==='circle' ? '50%' : S.shape==='square' ? '0px' : S.shape==='rounded' ? (S.radius+'px') : S.shape==='rect' ? '6px' : '50%';
+ let w = S.shape==='rect' ? (S.w||'120') : (S.w||'48');
+ let h = S.shape==='rect' ? (S.h||'48') : (S.h||'48');
+ // Header + Footer marks
+ ['logoMark','footerLogoMark'].forEach(id=>{
+   let el=document.getElementById(id); if(!el) return;
+   el.style.display = S.show ? 'grid' : 'none';
+   if(!S.show) return;
+   el.style.width=w+'px'; el.style.height=h+'px'; el.style.borderRadius=radius; el.style.borderColor=S.border; el.style.background=S.bg; el.style.overflow='hidden'; el.style.flexShrink='0';
+   // If logo image inside, make it fill shape
+   let img=el.querySelector('img'); if(img){ img.style.width='100%'; img.style.height='100%'; img.style.objectFit='cover'; img.style.borderRadius=radius; }
+ });
+ // Also hide the logo text wrapper? No - only mark hides, name stays. If user wants full logo hide, mark hide is enough.
+ // Preview
+ let pv=document.getElementById('logoPreview2'); if(pv && ADV2.logo) pv.innerHTML='<br><img src="'+ADV2.logo+'" style="width:'+w+'px;height:'+h+'px;object-fit:cover;border-radius:'+radius+';border:2px solid '+S.border+'">';
+}
+function saveLogoStyle2(){
+ ensureLogoStyle2();
+ let g=id=>document.getElementById(id)?.value;
+ ADV2.logoStyle={show:g('logoShow2')==='true', shape:g('logoShape2'), w:g('logoW2'), h:g('logoH2'), radius:g('logoRadius2'), border:g('logoBorder2'), bg:g('logoBg2')};
+ adv2Save(); applyLogoStyle2(); alert('Logo style saved — Header + Footer-la paarunga');
+}
+function resetLogoStyle2(){ ADV2.logoStyle={show:true,shape:'circle',w:'48',h:'48',radius:'50',border:'#C5A46D',bg:'#0A1425'}; adv2Save(); applyLogoStyle2(); fillLogoStyle2(); alert('Logo reset to original Circle'); }
+function fillLogoStyle2(){
+ ensureLogoStyle2(); let S=ADV2.logoStyle; let s=(id,v)=>{let e=document.getElementById(id); if(e) e.value=v;};
+ s('logoShow2',String(S.show)); s('logoShape2',S.shape); s('logoW2',S.w); s('logoH2',S.h); s('logoRadius2',S.radius); s('logoBorder2',S.border); s('logoBg2',S.bg);
+ let rv=document.getElementById('logoRadiusVal2'); if(rv) rv.textContent=S.radius+'px';
+}
+// Sync logo image to BOTH header + footer when setLogo is called - wrap original setLogo
+let _origSetLogo = window.setLogo;
+if(_origSetLogo){
+ window.setLogo = function(v){
+   _origSetLogo(v);
+   // Also set footer logo image
+   let fm=document.getElementById('footerLogoMark');
+   if(fm){ if(v){ fm.innerHTML='<img src="'+v+'" style="width:100%;height:100%;object-fit:cover;border-radius:inherit">'; } else { fm.innerHTML='A'; } }
+   applyLogoStyle2();
+ };
+}
+// Fill + live change
+let _origFillLogo = window.fillAdmin2;
+window.fillAdmin2 = function(){ if(_origFillLogo) _origFillLogo(); fillLogoStyle2(); applyLogoStyle2(); };
+document.addEventListener('change',e=>{ if(e.target.id && ['logoShow2','logoShape2','logoW2','logoH2','logoRadius2','logoBorder2','logoBg2'].includes(e.target.id)){ try{ saveLogoStyle2Silent(); }catch(err){} } });
+function saveLogoStyle2Silent(){ let g=id=>document.getElementById(id)?.value; if(!g('logoShow2')) return; ADV2.logoStyle={show:g('logoShow2')==='true',shape:g('logoShape2'),w:g('logoW2'),h:g('logoH2'),radius:g('logoRadius2'),border:g('logoBorder2'),bg:g('logoBg2')}; adv2Save(); applyLogoStyle2(); }
+applyLogoStyle2();
+</script>
+
+
+
+<script>
+/* ===== THE JUSTICE GATE - standalone module ===== */
+(function(){
+var timers=[];
+function clearT(){timers.forEach(function(x){clearTimeout(x)});timers=[];}
+function def(){return{enabled:true,preset:'gate',scalesImg:'',scalesSize:420,swing:4,swingSpeed:3.2,intensity:1,zoom:2.15,pullback:2.2,gold:'#C5A46D',light:1,energyOn:true,glow:0.9,particles:14,beam:true,flare:0.8,energyDur:1,doorOn:true,doorStyle:'royal',doorColor:'#6B4F1A',doorSpeed:2,doorAngle:105,doorDir:'out',doorLight:0.9,bgLight:0.9,t1:1.5,t2:2,t3:1,t4:2,t5:1,reveal:'fade',revealSpeed:0.8,freq:'every',skip:true,m_enabled:true,m_dur:4.5};}
+function get(k){try{return JSON.parse(localStorage.getItem(k)||'null')}catch(e){return null}}
+function pub(){return get('jg_intro_published')||def();}
+function draft(){return get('jg_intro_draft')||pub();}
+function fill(s){var v=function(id,val){var e=document.getElementById(id);if(e)e.value=String(val);};
+ v('jg_enabled',s.enabled);v('jg_preset',s.preset);v('jg_scalesImg',s.scalesImg||'');v('jg_scalesSize',s.scalesSize);v('jg_swing',s.swing);v('jg_swingSpeed',s.swingSpeed);v('jg_intensity',s.intensity);v('jg_zoom',s.zoom);v('jg_pullback',s.pullback);v('jg_gold',s.gold);v('jg_light',s.light);v('jg_energyOn',s.energyOn);v('jg_glow',s.glow);v('jg_particles',s.particles);v('jg_beam',s.beam);v('jg_flare',s.flare);v('jg_energyDur',s.energyDur);v('jg_doorOn',s.doorOn);v('jg_doorStyle',s.doorStyle);v('jg_doorColor',s.doorColor);v('jg_doorSpeed',s.doorSpeed);v('jg_doorAngle',s.doorAngle);v('jg_doorDir',s.doorDir);v('jg_doorLight',s.doorLight);v('jg_bgLight',s.bgLight);v('jg_t1',s.t1);v('jg_t2',s.t2);v('jg_t3',s.t3);v('jg_t4',s.t4);v('jg_t5',s.t5);v('jg_reveal',s.reveal);v('jg_revealSpeed',s.revealSpeed);v('jg_freq',s.freq);v('jg_skip',s.skip);v('jg_m_enabled',s.m_enabled);v('jg_m_dur',s.m_dur);var tot=document.getElementById('jg_total');if(tot)tot.value=(s.t1+s.t2+s.t3+s.t4+s.t5).toFixed(1);}
+function collect(){var g=function(id){var e=document.getElementById(id);return e?e.value:'';};var b=function(id){return g(id)==='true';};var n=function(id,d){var v=parseFloat(g(id));return isNaN(v)?d:v;};
+ return{enabled:b('jg_enabled'),preset:g('jg_preset'),scalesImg:g('jg_scalesImg'),scalesSize:n('jg_scalesSize',420),swing:n('jg_swing',4),swingSpeed:n('jg_swingSpeed',3.2),intensity:n('jg_intensity',1),zoom:n('jg_zoom',2.15),pullback:n('jg_pullback',2.2),gold:g('jg_gold')||'#C5A46D',light:n('jg_light',1),energyOn:b('jg_energyOn'),glow:n('jg_glow',0.9),particles:parseInt(g('jg_particles'))||14,beam:b('jg_beam'),flare:n('jg_flare',0.8),energyDur:n('jg_energyDur',1),doorOn:b('jg_doorOn'),doorStyle:g('jg_doorStyle'),doorColor:g('jg_doorColor')||'#6B4F1A',doorSpeed:n('jg_doorSpeed',2),doorAngle:n('jg_doorAngle',105),doorDir:g('jg_doorDir'),doorLight:n('jg_doorLight',0.9),bgLight:n('jg_bgLight',0.9),t1:n('jg_t1',1.5),t2:n('jg_t2',2),t3:n('jg_t3',1),t4:n('jg_t4',2),t5:n('jg_t5',1),reveal:g('jg_reveal'),revealSpeed:n('jg_revealSpeed',0.8),freq:g('jg_freq'),skip:b('jg_skip'),m_enabled:b('jg_m_enabled'),m_dur:n('jg_m_dur',4.5)};}
+function apply(s){
+ var intro=document.getElementById('jgIntro');if(!intro)return;
+ var wrap=document.getElementById('jgScalesWrap');var svg=document.getElementById('jgScalesSvg');
+ var isMob=window.innerWidth<640; var size=isMob?Math.min(s.scalesSize,300):s.scalesSize;
+ if(svg)svg.style.width=size+'px';
+ wrap.style.transform='scale('+s.zoom+')';
+ wrap.style.transition='transform '+s.pullback+'s cubic-bezier(.22,.7,.2,1), opacity .8s ease';
+ intro.style.setProperty('--jg-swing-angle',(s.swing*s.intensity)+'deg');
+ intro.style.setProperty('--jg-swing-speed',s.swingSpeed+'s');
+ intro.style.setProperty('--jg-glow',s.glow);
+ intro.style.setProperty('--jg-flare',s.flare);
+ intro.style.setProperty('--jg-door-speed',s.doorSpeed+'s');
+ intro.style.setProperty('--jg-door-angle',s.doorAngle+'deg');
+ intro.style.setProperty('--jg-door-light',s.doorLight);
+ var rays=document.getElementById('jgRays');if(rays)rays.style.display=s.beam?'block':'none';
+ var sk=document.getElementById('jgSkip');if(sk)sk.style.display=s.skip?'block':'none';
+ var pc=document.getElementById('jgParticles');pc.innerHTML='';
+ if(s.energyOn){var cnt=isMob?Math.min(s.particles,10):s.particles;for(var i=0;i<cnt;i++){var p=document.createElement('i');p.style.left=(5+Math.random()*90)+'%';p.style.top=(15+Math.random()*70)+'%';p.style.animationDelay=(Math.random()*2)+'s';pc.appendChild(p);}}
+ var doors=document.querySelectorAll('.jgDoor');var bg=s.doorStyle==='dark'?'linear-gradient(100deg,#0E0A04,#2A1E08 40%,#120C03 100%)':s.doorStyle==='gold'?'linear-gradient(100deg,#8A6A24,#F5E2A0 45%,#8A6A24 100%)':'linear-gradient(100deg,#1A1206,#3A2A0E 18%,#6B4F1A 42%,#2A1E08 68%,#120C03 100%)';
+ doors.forEach(function(d){d.style.background=bg;});
+ var existing=document.getElementById('jgCustomImg');
+ if(s.scalesImg){if(!existing){var im=document.createElement('img');im.id='jgCustomImg';im.style.maxWidth='88vw';im.style.filter='drop-shadow(0 30px 60px rgba(0,0,0,.7))';wrap.appendChild(im);existing=im;}existing.src=s.scalesImg;existing.style.width=size+'px';existing.style.display='block';if(svg)svg.style.display='none';}
+ else{if(existing)existing.style.display='none';if(svg)svg.style.display='block';}
+}
+function finish(){
+ var intro=document.getElementById('jgIntro');if(!intro){document.body.style.overflow='';return;}
+ var s=pub(); var dur=(s.revealSpeed||0.8)*1000;
+ intro.style.transition='opacity '+(s.revealSpeed||0.8)+'s ease';
+ if(s.reveal==='fade'){intro.classList.add('jg-closing');}
+ setTimeout(function(){intro.classList.remove('jg-show','jg-closing','jg-pullback','jg-settle','jg-energy','jg-doors','jg-open');intro.style.transition='';document.body.style.overflow='';},dur);
+ clearT();
+}
+window.jgSkip=function(){finish();};
+window.jgStop=function(){var intro=document.getElementById('jgIntro');if(intro)intro.classList.remove('jg-show','jg-pullback','jg-settle','jg-energy','jg-doors','jg-open','jg-closing');document.body.style.overflow='';clearT();};
+function play(s){
+ var intro=document.getElementById('jgIntro');if(!intro)return;
+ if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){return;}
+ var isMob=window.innerWidth<640; if(isMob&&!s.m_enabled)return;
+ var scaleF=isMob?(s.m_dur/(s.t1+s.t2+s.t3+s.t4+s.t5)):1;
+ var T=function(v){return v*scaleF*1000;};
+ clearT(); apply(s);
+ intro.classList.remove('jg-closing','jg-pullback','jg-settle','jg-energy','jg-doors','jg-open');
+ intro.classList.add('jg-show'); document.body.style.overflow='hidden';
+ timers.push(setTimeout(function(){intro.classList.add('jg-pullback');},80));
+ timers.push(setTimeout(function(){intro.classList.add('jg-settle');},T(s.t1+s.t2)));
+ timers.push(setTimeout(function(){if(s.energyOn)intro.classList.add('jg-energy');},T(s.t1+s.t2)));
+ timers.push(setTimeout(function(){if(s.doorOn){intro.classList.add('jg-doors');setTimeout(function(){intro.classList.add('jg-open');},120);}else{intro.classList.add('jg-doors');intro.classList.add('jg-open');}},T(s.t1+s.t2+s.t3)));
+ timers.push(setTimeout(function(){finish();},T(s.t1+s.t2+s.t3+s.t4+s.t5)));
+}
+function should(s){
+ if(!s.enabled||s.preset==='none'||s.freq==='never')return false;
+ if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return false;
+ if(s.freq==='every')return true;
+ if(s.freq==='session'){if(sessionStorage.getItem('jg_intro_session'))return false;sessionStorage.setItem('jg_intro_session','1');return true;}
+ if(s.freq==='device'){if(localStorage.getItem('jg_intro_device'))return false;localStorage.setItem('jg_intro_device','1');return true;}
+ return true;
+}
+window.jgSaveDraft=function(){localStorage.setItem('jg_intro_draft',JSON.stringify(collect()));var m=document.getElementById('jgMsg');if(m)m.textContent='Draft saved — Publish pannina mattum live aagum.';};
+window.jgPublish=function(){var s=collect();localStorage.setItem('jg_intro_draft',JSON.stringify(s));localStorage.setItem('jg_intro_published',JSON.stringify(s));var m=document.getElementById('jgMsg');if(m)m.textContent='Published! Refresh pannina live intro theriyum.';};
+window.jgReset=function(){localStorage.removeItem('jg_intro_draft');localStorage.removeItem('jg_intro_published');localStorage.removeItem('jg_intro_device');sessionStorage.removeItem('jg_intro_session');fill(def());var m=document.getElementById('jgMsg');if(m)m.textContent='Reset to default.';};
+window.jgPreview=function(){play(collect());};
+try{fill(draft());}catch(e){}
+function auto(){try{var s=pub();if(should(s))play(s);}catch(e){var el=document.getElementById('jgIntro');if(el)el.style.display='none';document.body.style.overflow='';}}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){setTimeout(auto,150)});}else{setTimeout(auto,150);}
+window.addEventListener('load',function(){var el=document.getElementById('jgIntro');if(el&&!el.classList.contains('jg-show')&&!sessionStorage.getItem('jg_started')){sessionStorage.setItem('jg_started','1');setTimeout(auto,100);}});
+})();
+</script>
+</body></html>
